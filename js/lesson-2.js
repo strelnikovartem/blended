@@ -16,6 +16,8 @@ styles.push('rock-n-roll');
 
 const idx = styles.indexOf('blues');
 
+console.log(idx);
+
 console.log(styles);
 
 //!task-2
