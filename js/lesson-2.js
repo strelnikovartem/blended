@@ -14,6 +14,8 @@ const styles = ['jazz', 'blues'];
 
 styles.push('rock-n-roll');
 
+const idx = styles.indexOf('blues');
+
 console.log(styles);
 
 //!task-2
