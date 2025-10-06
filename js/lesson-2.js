@@ -10,9 +10,11 @@
 // Використайте цикл for для перебору елементів масиву.
 // Нумерація елементів повинна починатися з 1 (а не з 0).
 
-const num = [1, 2, 3, 4, true];
+const styles = ['jazz', 'blues'];
 
-console.log(num);
+styles.push('rock-n-roll');
+
+console.log(styles);
 
 //!task-2
 
