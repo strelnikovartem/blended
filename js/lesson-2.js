@@ -35,4 +35,6 @@
 
 //!task-3
 
-const courses = [];
+const courses = ['html', 'css', 'js'];
+
+console.table(courses);
