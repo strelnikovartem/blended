@@ -10,17 +10,17 @@
 // Використайте цикл for для перебору елементів масиву.
 // Нумерація елементів повинна починатися з 1 (а не з 0).
 
-const styles = ['jazz', 'blues'];
+// const styles = ['jazz', 'blues'];
 
-styles.push('rock-n-roll');
+// styles.push('rock-n-roll');
 
-const idx = styles.indexOf('blues');
+// const idx = styles.indexOf('blues');
 
-styles[idx] = 'classic';
+// styles[idx] = 'classic';
 
-console.log(idx);
+// console.log(idx);
 
-console.log(styles);
+// console.log(styles);
 
 //!task-2
 
