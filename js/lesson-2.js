@@ -46,7 +46,7 @@
 
 const str1 = 'OneFull 13';
 
-const newStr1 = str1.split();
+const newStr1 = str1.split(' ');
 
 const newStr1Map = newStr1.map(i => i.toLowerCase());
 
