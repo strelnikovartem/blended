@@ -37,6 +37,6 @@
 
 const courses = ['html', 'css', 'js', 'react'];
 
-const lastIdx = courses.length - 1;
-console.table(courses);
-console.log(lastIdx);
+courses.join(' ');
+
+console.log(courses);
