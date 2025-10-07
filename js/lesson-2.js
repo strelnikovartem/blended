@@ -50,4 +50,6 @@ const newStr1 = str1.split();
 
 const newStr1Map = newStr1.map(i => i.toLowerCase());
 
-console.log(newStr1Map);
+const newStr2 = newStr1Map.join('=');
+
+console.log(newStr2);
