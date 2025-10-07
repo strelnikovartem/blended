@@ -34,3 +34,5 @@
 // const logins = ["Peter", "John", "Igor", "Sasha"];
 
 //!task-3
+
+const courses = [];
