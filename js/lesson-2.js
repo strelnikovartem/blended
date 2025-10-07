@@ -35,7 +35,7 @@
 
 //!task-3
 
-const courses = ['html', 'css', 'js'];
+const courses = ['html', 'css', 'js', 'react'];
 
 const lastIdx = courses.length - 1;
 console.table(courses);
