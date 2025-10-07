@@ -37,4 +37,6 @@
 
 const courses = ['html', 'css', 'js'];
 
+const lastIdx = courses.length - 1;
 console.table(courses);
+console.log(lastIdx);
