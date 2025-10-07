@@ -37,6 +37,6 @@
 
 const courses = ['html', 'css', 'js', 'react'];
 
-courses.join(' ');
+const str = courses.join(' ');
 
-console.log(courses);
+console.log(str);
