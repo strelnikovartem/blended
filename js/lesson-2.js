@@ -35,11 +35,13 @@
 
 //!task-3
 
-const courses = ['html', 'css', 'js', 'react'];
+// const courses = ['html', 'css', 'js', 'react'];
 
-const str = courses.join(' ');
+// const str = courses.join(' ');
 
-const newArrey = str.split(' ');
+// const newArrey = str.split(' ');
 
-console.log(str);
-console.log(newArrey);
+// console.log(str);
+// console.log(newArrey);
+
+const str1 = 'OneFull 13';
