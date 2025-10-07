@@ -45,3 +45,7 @@
 // console.log(newArrey);
 
 const str1 = 'OneFull 13';
+
+const newStr1 = str1.split();
+
+console.log(newStr1);
