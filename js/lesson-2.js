@@ -39,4 +39,7 @@ const courses = ['html', 'css', 'js', 'react'];
 
 const str = courses.join(' ');
 
+const newArrey = str.split('');
+
 console.log(str);
+console.log(newArrey);
