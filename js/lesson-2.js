@@ -48,6 +48,6 @@ const str1 = 'OneFull 13';
 
 const newStr1 = str1.split();
 
-newStr1.map(i => i.toLowerCase());
+const newStr1Map = newStr1.map(i => i.toLowerCase());
 
-console.log(newStr1);
+console.log(newStr1Map);
