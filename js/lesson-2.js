@@ -46,10 +46,10 @@
 
 const str1 = 'OneFull 13';
 
-const newStr1 = str1.split(' ');
+// const newStr1 = str1.split(' ');
 
-const newStr1Map = newStr1.map(i => i.toLowerCase());
+// const newStr1Map = newStr1.map(i => i.toLowerCase());
 
-const newStr2 = newStr1Map.join('-');
+// const newStr2 = newStr1Map.join('-');
 
-console.log(newStr2);
+console.log(str1);
