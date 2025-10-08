@@ -37,8 +37,12 @@
 
 const courses = ['html', 'css', 'js', 'react'];
 
-for (let i = 0; i < courses.length; i++) {
-  courses[i] += `-${i}`;
+// for (let i = 0; i < courses.length; i++) {
+//   courses[i] += `-${i}`;
+// }
+
+for (const course of courses) {
+  console.log(course);
 }
 
 console.log(courses);
