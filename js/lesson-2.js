@@ -35,14 +35,8 @@
 
 //!task-3
 
-const courses = ['html', 'css', 'js', 'react'];
+const value = '8 10';
 
-// for (let i = 0; i < courses.length; i++) {
-//   courses[i] += `-${i}`;
-// }
+const arr = value.split(' ');
 
-for (const course of courses) {
-  console.log(course);
-}
-
-console.log(courses);
+console.log(arr);
