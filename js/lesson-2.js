@@ -37,25 +37,8 @@
 
 const courses = ['html', 'css', 'js', 'react'];
 
-// const str = courses.join(' ');
-
-// const newArrey = str.split(' ');
-
-// console.log(str);
-// console.log(newArrey);
-
-// const str1 = ['OneFull 13'];
-
-// const newStr1 = str1.split(' ');
-
-// const newStr1Map = newStr1.map(i => i.toLowerCase());
-
-// const newStr2 = newStr1Map.join('-');
-
-// const arr = [1, 2, 3];
-
-// const arrNew = courses.concat(str1, arr);
-
-courses.pop();
+for (let i = 0; i < courses.length; i++) {
+  courses[i] += `-${i}`;
+}
 
 console.log(courses);
