@@ -41,7 +41,8 @@ let min;
 
 for (let i = 0; i < value.length; i++) {
   if (i === 0) {
-    console.log(value[i]);
+    min = value[i];
+  } else if () {
   }
 }
 
