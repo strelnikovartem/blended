@@ -39,4 +39,12 @@ const value = '8 10';
 
 const arr = value.split(' ');
 
+let total = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  total *= +arr[i];
+}
+
+console.log(total);
+
 console.log(arr);
