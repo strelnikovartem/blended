@@ -42,7 +42,8 @@ let min;
 for (let i = 0; i < value.length; i++) {
   if (i === 0) {
     min = value[i];
-  } else if () {
+  } else if (value[i] < min) {
+    min = value[i];
   }
 }
 
