@@ -34,17 +34,3 @@
 // const logins = ["Peter", "John", "Igor", "Sasha"];
 
 //!task-3
-
-const value = [6, 3, 11, 9, 2, 32];
-
-let min;
-
-for (let i = 0; i < value.length; i++) {
-  if (i === 0) {
-    min = value[i];
-  } else if (value[i] < min) {
-    min = value[i];
-  }
-}
-
-console.log(min);
