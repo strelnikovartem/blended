@@ -41,7 +41,8 @@ let min;
 
 for (let i = 0; i < value.length; i++) {
   if (value[i] < min) {
+    min = value[i];
   }
 }
 
-console.log();
+console.log(min);
