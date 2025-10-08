@@ -35,16 +35,13 @@
 
 //!task-3
 
-const value = '8 10';
+const value = [6, 3, 11, 9, 2, 32];
 
-const arr = value.split(' ');
+let min;
 
-let total = 1;
-
-for (let i = 0; i < arr.length; i++) {
-  total *= +arr[i];
+for (let i = 0; i < value.length; i++) {
+  if (value[i] < min) {
+  }
 }
 
-console.log(total);
-
-console.log(arr);
+console.log();
