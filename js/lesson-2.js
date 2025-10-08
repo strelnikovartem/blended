@@ -40,8 +40,8 @@ const value = [6, 3, 11, 9, 2, 32];
 let min;
 
 for (let i = 0; i < value.length; i++) {
-  if (value[i] < min) {
-    min = value[i];
+  if (i === 0) {
+    console.log(value[i]);
   }
 }
 
