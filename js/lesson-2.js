@@ -35,7 +35,7 @@
 
 //!task-3
 
-// const courses = ['html', 'css', 'js', 'react'];
+const courses = ['html', 'css', 'js', 'react'];
 
 // const str = courses.join(' ');
 
@@ -44,7 +44,7 @@
 // console.log(str);
 // console.log(newArrey);
 
-const str1 = 'OneFull 13';
+const str1 = ['OneFull 13'];
 
 // const newStr1 = str1.split(' ');
 
@@ -52,4 +52,8 @@ const str1 = 'OneFull 13';
 
 // const newStr2 = newStr1Map.join('-');
 
-console.log(str1);
+const arr = [1, 2, 3];
+
+const arrNew = courses.concat(str1, arr);
+
+console.log(arrNew);
