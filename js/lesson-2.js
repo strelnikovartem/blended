@@ -45,6 +45,6 @@ const add = function () {
   return total;
 };
 
-add(1, 2, 3);
+console.log(add(1, 2, 3));
 add(10, 20, 30, 40);
 add(100, 200, 300, 400, 500);
