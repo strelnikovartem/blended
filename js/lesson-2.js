@@ -35,14 +35,8 @@
 
 //!task-3
 
-function foo(arrey) {
-  for (let i = 0; i < arrey.length; i++) {
-    arrey[i] *= 2;
-  }
-}
+const add = function () {};
 
-const numbers = [1, 2, 3, 4, 5];
-
-foo(numbers);
-
-console.log(numbers);
+add(1, 2, 3);
+add(10, 20, 30, 40);
+add(100, 200, 300, 400, 500);
