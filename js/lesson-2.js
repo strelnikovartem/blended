@@ -35,9 +35,14 @@
 
 //!task-3
 
-const value = [1, 2, 3, 4, 5];
+function foo(arrey) {
+  for (let i = 0; i < arrey.length; i++) {
+    arrey[i] *= 2;
+  }
+}
 
-const result = value.splice(2, 1, 'hello');
+const numbers = [1, 2, 3, 4, 5];
 
-console.log('value :', value);
-console.log('result :', result);
+foo(numbers);
+
+console.log(numbers);
