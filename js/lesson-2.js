@@ -34,3 +34,10 @@
 // const logins = ["Peter", "John", "Igor", "Sasha"];
 
 //!task-3
+
+const value = [1, 2, 3, 4, 5];
+
+const result = value.splice(2, 1, 'hello');
+
+console.log('value :', value);
+console.log('result :', result);
