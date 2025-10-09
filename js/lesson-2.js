@@ -36,7 +36,8 @@
 //!task-3
 
 const add = function () {
-  console.log(arguments);
+  const args = Array.from(arguments);
+  console.log(args);
 };
 
 add(1, 2, 3);
