@@ -35,7 +35,9 @@
 
 //!task-3
 
-const add = function () {};
+const add = function () {
+  console.log(arguments);
+};
 
 add(1, 2, 3);
 add(10, 20, 30, 40);
