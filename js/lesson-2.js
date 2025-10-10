@@ -37,11 +37,9 @@ function checkLogin(array) {
   }
 }
 
-checkLogin(logins);
-
-// console.log();
-
 const logins = ['Peter', 'John', 'Igor', 'Sasha'];
+
+checkLogin(logins);
 
 //!task-3
 
