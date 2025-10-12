@@ -31,18 +31,30 @@
 // Якщо ім'я є в масиві – виводить повідомлення через alert: "Welcome, <name>!"
 // Якщо ім'я відсутнє – виводить повідомлення: "User not found".
 
-const logins = ['Peter', 'John', 'Igor', 'Sasha'];
-
 function checkLogin(array) {
-  const name = prompt('Enter your name');
-  for (const item of array) {
-    if (item === name) {
-      return alert(`Welcome, ${name}!`);
-    } else {
-      return alert(`User not found`);
-    }
+  const userName = prompt("Введіть ваше ім'я:");
+
+  if (userName === null || userName.trim() === '') {
+    alert('Скасовано');
+    return;
+  }
+
+  // Робимо порівняння нечутливим до регістру:
+  const normalizedName = userName.toLowerCase();
+  const normalizedArray = array.map(name => name.toLowerCase());
+
+  if (normalizedArray.includes(normalizedName)) {
+    // Знаходимо оригінальне ім’я, щоб вивести з великої букви
+    const originalName = array.find(
+      name => name.toLowerCase() === normalizedName
+    );
+    alert(`Welcome, ${originalName}!`);
+  } else {
+    alert('User not found');
   }
 }
+
+const logins = ['Peter', 'John', 'Igor', 'Sasha'];
 
 checkLogin(logins);
 
