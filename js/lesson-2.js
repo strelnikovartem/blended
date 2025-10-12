@@ -37,7 +37,9 @@ function checkLogin(array) {
   const name = prompt('Enter your name');
   for (const item of array) {
     if (item === name) {
-      alert(`Welcome, ${name}!`);
+      return alert(`Welcome, ${name}!`);
+    } else {
+      return alert(`User not found`);
     }
   }
 }
