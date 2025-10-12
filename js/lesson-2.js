@@ -64,3 +64,16 @@
 // яка приймає довільну кількість
 // аргументів і повертає їхнє середнє значення.
 // Додайте перевірку, що аргументи - це числа.
+
+function caclculateAverage(arr) {
+  if (arr !== Number) {
+    return;
+  }
+  const total = 0;
+  for (const item of arr) {
+    total += item;
+  }
+  return total / 2;
+}
+
+console.log(caclculateAverage(10, 20, 30));
