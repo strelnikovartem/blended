@@ -31,16 +31,16 @@
 // Якщо ім'я є в масиві – виводить повідомлення через alert: "Welcome, <name>!"
 // Якщо ім'я відсутнє – виводить повідомлення: "User not found".
 
+const logins = ['Peter', 'John', 'Igor', 'Sasha'];
+
 function checkLogin(array) {
+  const name = prompt('Enter your name');
   for (const item of array) {
-    const name = prompt('Enter your name');
     if (item === name) {
-      console.log(item);
+      alert(`Welcome, ${name}!`);
     }
   }
 }
-
-const logins = ['Peter', 'John', 'Igor', 'Sasha'];
 
 checkLogin(logins);
 
