@@ -33,7 +33,9 @@
 
 function checkLogin(array) {
   for (const item of array) {
-    console.log(item);
+    if (item === ) {
+        console.log(item);
+    }
   }
 }
 
