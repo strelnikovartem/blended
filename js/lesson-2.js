@@ -33,8 +33,9 @@
 
 function checkLogin(array) {
   for (const item of array) {
-    if (item === ) {
-        console.log(item);
+    const name = prompt('Enter your name');
+    if (item === name) {
+      console.log(item);
     }
   }
 }
