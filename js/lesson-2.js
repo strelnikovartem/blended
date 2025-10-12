@@ -31,45 +31,36 @@
 // Якщо ім'я є в масиві – виводить повідомлення через alert: "Welcome, <name>!"
 // Якщо ім'я відсутнє – виводить повідомлення: "User not found".
 
-function checkLogin(array) {
-  const userName = prompt("Введіть ваше ім'я:");
+// function checkLogin(array) {
+//   const userName = prompt("Введіть ваше ім'я:");
 
-  if (userName === null || userName.trim() === '') {
-    alert('Скасовано');
-    return;
-  }
+//   if (userName === null || userName.trim() === '') {
+//     alert('Скасовано');
+//     return;
+//   }
 
-  // Робимо порівняння нечутливим до регістру:
-  const normalizedName = userName.toLowerCase();
-  const normalizedArray = array.map(name => name.toLowerCase());
+//   // Робимо порівняння нечутливим до регістру:
+//   const normalizedName = userName.toLowerCase();
+//   const normalizedArray = array.map(name => name.toLowerCase());
 
-  if (normalizedArray.includes(normalizedName)) {
-    // Знаходимо оригінальне ім’я, щоб вивести з великої букви
-    const originalName = array.find(
-      name => name.toLowerCase() === normalizedName
-    );
-    alert(`Welcome, ${originalName}!`);
-  } else {
-    alert('User not found');
-  }
-}
+//   if (normalizedArray.includes(normalizedName)) {
+//     // Знаходимо оригінальне ім’я, щоб вивести з великої букви
+//     const originalName = array.find(
+//       name => name.toLowerCase() === normalizedName
+//     );
+//     alert(`Welcome, ${originalName}!`);
+//   } else {
+//     alert('User not found');
+//   }
+// }
 
-const logins = ['Peter', 'John', 'Igor', 'Sasha'];
+// const logins = ['Peter', 'John', 'Igor', 'Sasha'];
 
-checkLogin(logins);
+// checkLogin(logins);
 
 //!task-3
 
-const add = function () {
-  const args = Array.from(arguments);
-  let total = 0;
-
-  for (const item of args) {
-    total += item;
-  }
-  return total;
-};
-
-console.log(add(1, 2, 3));
-add(10, 20, 30, 40);
-add(100, 200, 300, 400, 500);
+// Напишіть функцію caclculateAverage(),
+// яка приймає довільну кількість
+// аргументів і повертає їхнє середнє значення.
+// Додайте перевірку, що аргументи - це числа.
