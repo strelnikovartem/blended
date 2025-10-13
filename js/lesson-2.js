@@ -66,7 +66,7 @@
 // Додайте перевірку, що аргументи - це числа.
 
 function caclculateAverage() {
-  const total = 0;
+  let total = 0;
   for (let i = 0; i < arguments.length; i++) {
     total += arguments[i];
   }
