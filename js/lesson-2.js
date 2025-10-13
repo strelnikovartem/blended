@@ -65,28 +65,28 @@
 // аргументів і повертає їхнє середнє значення.
 // Додайте перевірку, що аргументи - це числа.
 
-// function caclculateAverage(arr) {
-//   if (arr !== Number) {
-//     return;
-//   }
-//   const total = 0;
-//   for (const item of arr) {
-//     total += item;
-//   }
-//   return total / 2;
-// }
+function caclculateAverage() {
+  const total = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    total += arguments[i];
+  }
+  return total / arguments.length;
+}
+
+console.log(caclculateAverage(1, 2, 3));
+console.log(caclculateAverage(10, 20, 30, 40, 50));
 
 // console.log(caclculateAverage(10, 20, 30));
 
-const add = function () {
-  const args = Array.from(arguments);
-  let total = 0;
+// const add = function () {
+//   const args = Array.from(arguments);
+//   let total = 0;
 
-  for (const item of args) {
-    total += item;
-  }
-  return total;
-};
+//   for (const item of args) {
+//     total += item;
+//   }
+//   return total;
+// };
 
-console.log(add(1, 2, 3));
-add(10, 20, 30, 40);
+// console.log(add(1, 2, 3));
+// add(10, 20, 30, 40);
