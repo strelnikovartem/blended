@@ -82,4 +82,5 @@ const add = function () {
   console.log('rururu');
 };
 
-add();
+add(1, 2, 3);
+add(10, 20, 30, 40);
