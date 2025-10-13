@@ -80,8 +80,13 @@
 
 const add = function () {
   const args = Array.from(arguments);
-  console.log(args);
+  let total = 0;
+
+  for (const item of args) {
+    total += item;
+  }
+  return total;
 };
 
-add(1, 2, 3);
+console.log(add(1, 2, 3));
 add(10, 20, 30, 40);
