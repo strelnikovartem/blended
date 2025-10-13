@@ -79,7 +79,8 @@
 // console.log(caclculateAverage(10, 20, 30));
 
 const add = function () {
-  console.log('rururu');
+  const args = Array.from(arguments);
+  console.log(args);
 };
 
 add(1, 2, 3);
