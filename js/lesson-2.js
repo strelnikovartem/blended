@@ -104,8 +104,10 @@ function getConbanation(arr, count) {
   const res = [];
 
   for (let i = 0; i < arr.length; i += count) {
-    console.log(i, i + count);
+    const newArr = arr.slice(i, i + count);
+    res.push(newArr);
   }
+  return res;
 }
 
-getConbanation(arr, 3);
+console.log(getConbanation(arr, 3));
