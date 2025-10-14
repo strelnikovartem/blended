@@ -104,7 +104,7 @@ function getConbanation(arr, count) {
   const res = [];
 
   for (let i = 0; i < arr.length; i += count) {
-    console.log(arr[i]);
+    console.log(i, i + count);
   }
 }
 
