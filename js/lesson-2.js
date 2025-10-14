@@ -98,11 +98,11 @@
 // console.log(add(1, 2, 3));
 // add(10, 20, 30, 40);
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 function full(min, max) {
   let sum = [];
   for (let i = min; i < max; i += 2) {
     return sum.push(i);
   }
 }
+
+console.log(full(2, 10));
