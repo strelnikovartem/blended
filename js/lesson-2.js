@@ -109,3 +109,15 @@ function fnB() {
 function fnC() {
   console.log('fnC');
 }
+
+console.log('before fnA');
+fnA();
+console.log('after fnA');
+
+console.log('before fnB');
+fnB();
+console.log('after fnB');
+
+console.log('before fnC');
+fnC();
+console.log('after fnC');
