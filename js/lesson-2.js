@@ -74,7 +74,7 @@ function caclculateAverage() {
 }
 
 console.log(caclculateAverage(1, 2, 3));
-console.log(caclculateAverage(10, 20, 30, 40, 50));
+console.log(caclculateAverage(10, 20, 30, 40, 50, 60));
 
 // console.log(caclculateAverage(10, 20, 30));
 
