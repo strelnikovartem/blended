@@ -100,14 +100,9 @@
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-function getConbanation(arr, count) {
-  const res = [];
-
-  for (let i = 0; i < arr.length; i += count) {
-    const newArr = arr.slice(i, i + count);
-    res.push(newArr);
+function full(min, max) {
+  let sum = [];
+  for (let i = min; i < max; i += 2) {
+    return sum.push(i);
   }
-  return res;
 }
-
-console.log(getConbanation(arr, 3));
