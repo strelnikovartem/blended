@@ -97,3 +97,16 @@
 
 // console.log(add(1, 2, 3));
 // add(10, 20, 30, 40);
+
+const feedback = {
+  age: 10,
+  name: 20,
+};
+
+let total = 0;
+
+for (const key in feedback) {
+  total += feedback[key];
+}
+
+console.log(total);
