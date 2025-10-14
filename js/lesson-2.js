@@ -100,7 +100,7 @@
 
 const playlist = {
   name: 'My playlist',
-  tracks: [track - 1, track - 2, track - 3],
+  tracks: ['track - 1', 'track - 2', 'track - 3'],
   rating: 5,
   isFavorite: true,
 };
