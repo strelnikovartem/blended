@@ -65,23 +65,23 @@
 // аргументів і повертає їхнє середнє значення.
 // Додайте перевірку, що аргументи - це числа.
 
-function caclculateAverage() {
-  if (isNaN(arguments)) {
-    return;
-  } else {
-    let total = 0;
-    for (let i = 0; i < arguments.length; i++) {
-      total += arguments[i];
-    }
-    total / arguments.length;
-  }
-  return total;
-}
+// function caclculateAverage() {
+//   if (isNaN(arguments)) {
+//     return;
+//   } else {
+//     let total = 0;
+//     for (let i = 0; i < arguments.length; i++) {
+//       total += arguments[i];
+//     }
+//     total / arguments.length;
+//   }
+//   return total;
+// }
 
-caclculateAverage(1, 2, 3);
-caclculateAverage(10, 20, 30, 40, 50, 60);
-console.log();
-console.log();
+// caclculateAverage(1, 2, 3);
+// caclculateAverage(10, 20, 30, 40, 50, 60);
+// console.log();
+// console.log();
 
 // console.log(caclculateAverage(10, 20, 30));
 
@@ -97,3 +97,15 @@ console.log();
 
 // console.log(add(1, 2, 3));
 // add(10, 20, 30, 40);
+
+function fnA() {
+  console.log('fnA');
+}
+
+function fnB() {
+  console.log('fnB');
+}
+
+function fnC() {
+  console.log('fnC');
+}
