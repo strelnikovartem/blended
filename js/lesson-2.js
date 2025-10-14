@@ -98,11 +98,11 @@
 // console.log(add(1, 2, 3));
 // add(10, 20, 30, 40);
 
-function full(min, max) {
-  let sum = [];
-  for (let i = min; i < max; i += 2) {
-    return sum.push(i);
-  }
-}
+const playlist = {
+  name: 'My playlist',
+  tracks: [track - 1, track - 2, track - 3],
+  rating: 5,
+  isFavorite: true,
+};
 
-console.log(full(2, 10));
+console.log(playlist);
