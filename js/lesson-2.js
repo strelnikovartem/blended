@@ -100,6 +100,10 @@
 function info(name, phones) {
   const nameArray = name.split(',');
   const phonesArray = phones.split(',');
+
+  for (let i = 0; i < nameArray.length; i++) {
+    console.log(nameArray[i], phonesArray[i]);
+  }
 }
 
 info('Artem, Sergey, Artur', '01, 02,03');
