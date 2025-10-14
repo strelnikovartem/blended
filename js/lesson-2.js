@@ -97,13 +97,5 @@
 
 // console.log(add(1, 2, 3));
 // add(10, 20, 30, 40);
-function info(name, phones) {
-  const nameArray = name.split(',');
-  const phonesArray = phones.split(',');
 
-  for (let i = 0; i < nameArray.length; i++) {
-    console.log(nameArray[i], phonesArray[i]);
-  }
-}
-
-info('Artem, Sergey, Artur', '01, 02,03');
+const arr = [1, 2, 3, 4, 5];
