@@ -97,16 +97,3 @@
 
 // console.log(add(1, 2, 3));
 // add(10, 20, 30, 40);
-
-const playlist = {
-  name: 'My playlist',
-  tracks: ['track - 1', 'track - 2', 'track - 3'],
-  rating: 5,
-  isFavorite: true,
-  skills: {
-    html: true,
-    js: false,
-  },
-};
-
-console.log(playlist);
