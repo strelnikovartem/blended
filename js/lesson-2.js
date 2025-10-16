@@ -99,8 +99,9 @@
 // add(10, 20, 30, 40);
 
 const feedback = {
-  age: 10,
-  name: 20,
+  good: 10,
+  netural: 20,
+  bad: 30,
 };
 
 let total = 0;
