@@ -123,4 +123,12 @@ const feedback = {
 
 // console.log(keys);
 
-const values = Object.values();
+const values = Object.values(feedback);
+
+let bank = 0;
+
+for (const value of values) {
+  bank += value;
+}
+
+console.log(bank);
