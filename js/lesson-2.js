@@ -112,13 +112,15 @@ const feedback = {
 
 // console.log(total);
 
-const keys = Object.keys(feedback);
-let sum = 0;
+// const keys = Object.keys(feedback);
+// let sum = 0;
 
-for (const key of keys) {
-  sum += feedback[key];
-}
+// for (const key of keys) {
+//   sum += feedback[key];
+// }
 
-console.log(sum);
+// console.log(sum);
 
-console.log(keys);
+// console.log(keys);
+
+const values = Object.values();
