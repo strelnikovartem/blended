@@ -104,10 +104,12 @@ const feedback = {
   bad: 30,
 };
 
-let total = 0;
+// let total = 0;
 
-for (const key in feedback) {
-  total += feedback[key];
-}
+// for (const key in feedback) {
+//   total += feedback[key];
+// }
 
-console.log(total);
+// console.log(total);
+
+const keys = Object.keys(feedback);
