@@ -138,3 +138,7 @@ const salaries = {
   Danila: 200,
   Fanda: 300,
 };
+
+function summa(obj) {}
+
+console.log(summa(salaries));
