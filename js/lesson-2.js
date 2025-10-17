@@ -98,11 +98,11 @@
 // console.log(add(1, 2, 3));
 // add(10, 20, 30, 40);
 
-const feedback = {
-  good: 10,
-  netural: 20,
-  bad: 30,
-};
+// const feedback = {
+//   good: 10,
+//   netural: 20,
+//   bad: 30,
+// };
 
 // let total = 0;
 
@@ -123,12 +123,12 @@ const feedback = {
 
 // console.log(keys);
 
-const values = Object.values(feedback);
+// const values = Object.values(feedback);
 
-let bank = 0;
+// let bank = 0;
 
-for (const value of values) {
-  bank += value;
-}
+// for (const value of values) {
+//   bank += value;
+// }
 
-console.log(bank);
+// console.log(bank);
