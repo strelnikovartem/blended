@@ -158,20 +158,3 @@
 
 // console.log(pets);
 // console.log(dogs);
-
-const friends = [
-  { name: 'alice', age: 30 },
-  { name: 'Dan', age: 30 },
-  { name: 'Bob', age: 30 },
-];
-
-function findFriends(a, b) {
-  for (const f of a) {
-    if (f.name.toLowerCase() === b.toLowerCase()) {
-      return f;
-    }
-  }
-  return 'No fau';
-}
-
-console.log(findFriends(friends, 'aliCe'));
