@@ -65,21 +65,15 @@
 // аргументів і повертає їхнє середнє значення.
 // Додайте перевірку, що аргументи - це числа.
 
-function caclculateAverage(args) {}
-
-function transformString(string) {
-  const words = string.split('_');
-  console.log(words);
-  return words.join('-');
+function caclculateAverage() {
+  const args = Array.from(arguments);
+  console.log(args);
 }
 
-console.log(transformString('user_age')); // "user-age"
-transformString('price_per_droid'); // "price-per-droid"
-
-// caclculateAverage(1, 2, 3);
-// caclculateAverage(10, 20, 30, 40, 50, 60);
-// console.log();
-// console.log();
+caclculateAverage(1, 2, 3);
+caclculateAverage(10, 20, 30, 40, 50, 60);
+console.log();
+console.log();
 
 // console.log(caclculateAverage(10, 20, 30));
 
