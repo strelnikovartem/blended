@@ -134,9 +134,9 @@
 // console.log(bank);
 
 const salaries = {
-  Sergey: 100,
-  Danila: 200,
-  Fanda: 300,
+  // Sergey: 100,
+  // Danila: 200,
+  // Fanda: 300,
 };
 
 function summa(obj) {
