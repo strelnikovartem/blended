@@ -159,16 +159,19 @@
 // console.log(pets);
 // console.log(dogs);
 
-const animal = {
-  eats: true,
-  walk() {
-    console.log('Animal walks');
-  },
-};
+const friends = [
+  { name: 'alice', age: 30 },
+  { name: 'Dan', age: 30 },
+  { name: 'Bob', age: 30 },
+];
 
-const dog = Object.create(animal);
-dog.barks = true;
+function findFriends(a, b) {
+  for (const f of a) {
+    if (f.name.toLowerCase() === b.toLowerCase()) {
+      return f;
+    }
+  }
+  return 'No fau';
+}
 
-console.log(dog.eats); // true  ← успадковано від animal
-dog.walk(); // Animal walks
-console.log(dog.barks); // true
+console.log(findFriends(friends, 'aliCe'));
