@@ -133,21 +133,42 @@
 
 // console.log(bank);
 
-const salaries = {
-  // Sergey: 100,
-  // Danila: 200,
-  // Fanda: 300,
+// const salaries = {
+//   Sergey: 100,
+//   Danila: 200,
+//   Fanda: 300,
+// };
+
+// function summa(obj) {
+//   let total = 0;
+
+//   const values = Object.values(obj);
+
+//   for (const value of values) {
+//     total += value;
+//   }
+//   return total;
+// }
+
+// console.log(summa(salaries));
+
+// const pets = { legs: 4 };
+
+// const dogs = Object.create(pets);
+
+// console.log(pets);
+// console.log(dogs);
+
+const animal = {
+  eats: true,
+  walk() {
+    console.log('Animal walks');
+  },
 };
 
-function summa(obj) {
-  let total = 0;
+const dog = Object.create(animal);
+dog.barks = true;
 
-  const values = Object.values(obj);
-
-  for (const value of values) {
-    total += value;
-  }
-  return total;
-}
-
-console.log(summa(salaries));
+console.log(dog.eats); // true  ← успадковано від animal
+dog.walk(); // Animal walks
+console.log(dog.barks); // true
