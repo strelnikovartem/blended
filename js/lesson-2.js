@@ -132,3 +132,9 @@
 // }
 
 // console.log(bank);
+
+const salaries = {
+  Sergey: 100,
+  Danila: 200,
+  Fanda: 300,
+};
