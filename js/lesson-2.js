@@ -140,7 +140,7 @@ const salaries = {
 };
 
 function summa(obj) {
-  const total = 0;
+  let total = 0;
 
   const values = Object.values(obj);
 
