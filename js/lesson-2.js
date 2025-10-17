@@ -139,6 +139,15 @@ const salaries = {
   Fanda: 300,
 };
 
-function summa(obj) {}
+function summa(obj) {
+  const total = 0;
+
+  const values = Object.values(obj);
+
+  for (const value of values) {
+    total += value;
+  }
+  return total;
+}
 
 console.log(summa(salaries));
