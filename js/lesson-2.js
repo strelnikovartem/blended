@@ -91,7 +91,17 @@
 const play1 = {
   name: 'A',
   age: 10,
-  changeName() {
-    play1.name = 'New';
+  changeName(newName) {
+    play1.name = newName;
   },
 };
+
+const play2 = {
+  name: 'B',
+  age: 20,
+};
+
+play2.changeName2 = play1.changeName;
+play2.changeName2('foo');
+
+console.log(play1);
