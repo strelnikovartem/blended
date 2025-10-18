@@ -73,9 +73,14 @@
 const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
 
 function sum(params) {
+  let res = [];
+
   for (const item of params) {
     console.log(item);
+    const two = item + item;
+    res.push(two);
   }
+  return res;
 }
 
 console.log(sum(someArr));
