@@ -70,20 +70,19 @@
 // Напишіть функцію, яка сумуватиме сусідні числа
 // і пушитиме їх в новий масив.
 
-const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
 
-function sum(params) {
-  let res = [];
+// function sum(params) {
+//   const res = [];
 
-  for (const item of params) {
-    console.log(item);
-    const two = item + item;
-    res.push(two);
-  }
-  return res;
-}
+//   for (let i = 0; i < params.length - 1; i++) {
+//     const total = params[i] + params[i + 1];
+//     res.push(total);
+//   }
+//   return res;
+// }
 
-console.log(sum(someArr));
+// console.log(sum(someArr));
 
 // уточнення: складати необхідно перше число з другим, потім друге - з третім,
 // третє - з четвертим і так до кінця.
