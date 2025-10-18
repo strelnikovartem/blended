@@ -90,4 +90,4 @@
 
 const spred = [1, ...[2, 3, 4]];
 
-console.log(spred);
+console.log(...spred);
