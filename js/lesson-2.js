@@ -92,16 +92,10 @@ const play1 = {
   name: 'A',
   age: 10,
   changeName(newName) {
-    play1.name = newName;
+    this.name = newName;
   },
 };
 
-const play2 = {
-  name: 'B',
-  age: 20,
-};
-
-play2.changeName2 = play1.changeName;
-play2.changeName2('foo');
+play1.changeName('new');
 
 console.log(play1);
