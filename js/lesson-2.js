@@ -88,19 +88,7 @@
 // третє - з четвертим і так до кінця.
 // В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
 
-const play1 = {
-  name: 'A',
-  age: 10,
-  tracks: ['track-1', 'track-2'],
-  changeName(newName) {
-    this.name = newName;
-  },
-  newTracks(newTrack) {
-    this.tracks.push(newTrack);
-  },
-};
+function foo() {}
 
-play1.changeName('new');
-play1.newTracks('track-3');
-
-console.log(play1);
+foo(1, 2, 3);
+foo(10, 20, 30, 40);
