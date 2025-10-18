@@ -67,15 +67,21 @@
 
 function caclculateAverage() {
   const args = Array.from(arguments);
-  console.log(args);
+  if (args === Number || args === '' || args === NaN) {
+    return;
+  }
+  let total = 0;
+  for (const arg of args) {
+    total += arg;
+  }
+  return total / args.length;
 }
 
-caclculateAverage(1, 2, 3);
-caclculateAverage(10, 20, 30, 40, 50, 60);
-console.log();
-console.log();
+console.log(caclculateAverage(1, 2, 3));
+console.log(caclculateAverage(10, 20, 30, 40, 50, 60));
 
-// console.log(caclculateAverage(10, 20, 30));
+console.log(caclculateAverage());
+console.log(caclculateAverage(true));
 
 // const add = function () {
 //   const args = Array.from(arguments);
