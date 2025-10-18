@@ -91,8 +91,12 @@
 const play1 = {
   name: 'A',
   age: 10,
+  tracks: ['track-1', 'track-'],
   changeName(newName) {
     this.name = newName;
+  },
+  newTracks(newTrack) {
+    this.tracks = newTrack;
   },
 };
 
