@@ -91,15 +91,16 @@
 const play1 = {
   name: 'A',
   age: 10,
-  tracks: ['track-1', 'track-'],
+  tracks: ['track-1', 'track-2'],
   changeName(newName) {
     this.name = newName;
   },
   newTracks(newTrack) {
-    this.tracks = newTrack;
+    this.tracks.push(newTrack);
   },
 };
 
 play1.changeName('new');
+play1.newTracks('track-3');
 
 console.log(play1);
