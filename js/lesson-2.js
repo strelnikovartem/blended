@@ -151,7 +151,4 @@ const account = {
 account.deposit(300);
 account.deposit(500);
 
-account.withdraw(100);
-
-console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 console.log(account);
