@@ -96,5 +96,25 @@ const Transaction = {
 const account = {
   balance: 0,
 
-  transaction: [],
+  transactions: [],
+
+  createTransaction(amount, type) {
+    return (obj1 = { id: amount, amount, type });
+  },
+
+  deposit(amount) {
+    this.balance += amount;
+
+    const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
+
+    this.transactions.push(transaction);
+  },
+
+  withdraw(amount) {},
+
+  getBalance() {},
+
+  getTransactionDetails(id) {},
+
+  getTransactionTotal(type) {},
 };
