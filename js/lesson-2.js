@@ -112,7 +112,10 @@ const account = {
   },
 
   withdraw(amount) {
-    if (this.balance < amount) console.log('NO');
+    if (this.balance < amount) {
+      console.log('NO');
+      return;
+    }
 
     this.balance -= amount;
     const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
@@ -128,5 +131,7 @@ const account = {
 };
 
 account.deposit(300);
+
+account.withdraw(500);
 
 console.log(account);
