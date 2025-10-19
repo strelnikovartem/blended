@@ -123,15 +123,23 @@ const account = {
     this.transactions.push(transaction);
   },
 
-  getBalance() {},
+  getBalance() {
+    return this.balance;
+  },
 
-  getTransactionDetails(id) {},
+  getTransactionDetails(id) {
+    for (const item of this.transactions) {
+      if()
+      
+    }
+  },
 
   getTransactionTotal(type) {},
 };
 
 account.deposit(300);
 
-account.withdraw(500);
+account.withdraw(100);
 
+console.log(account.balance);
 console.log(account);
