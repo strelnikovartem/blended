@@ -153,5 +153,5 @@ account.deposit(500);
 
 account.withdraw(100);
 
-console.log(account.getTransactionDetails(200));
+console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 console.log(account);
