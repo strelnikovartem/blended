@@ -129,9 +129,11 @@ const account = {
 
   getTransactionDetails(id) {
     for (const item of this.transactions) {
-      if()
-      
+      if (item.id === id) {
+        return item;
+      }
     }
+    return 'Not found';
   },
 
   getTransactionTotal(type) {},
