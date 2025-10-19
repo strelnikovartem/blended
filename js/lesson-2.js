@@ -118,3 +118,5 @@ const account = {
 
   getTransactionTotal(type) {},
 };
+
+console.log(account);
