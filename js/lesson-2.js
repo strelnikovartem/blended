@@ -141,16 +141,17 @@ const account = {
 
     for (const item of this.transactions) {
       if (item.type === type) {
-        res += 
+        res += item.amount;
       }
     }
+    return res;
   },
 };
 
 account.deposit(300);
 account.deposit(500);
 
-account.withdraw(200);
+account.withdraw(100);
 
 console.log(account.getTransactionDetails(200));
 console.log(account);
