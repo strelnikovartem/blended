@@ -136,7 +136,14 @@ const account = {
     return 'Not found';
   },
 
-  getTransactionTotal(type) {},
+  getTransactionTotal(type) {
+    let res = 0;
+
+    for (const item of this.transactions) {
+      if (item) {
+      }
+    }
+  },
 };
 
 account.deposit(300);
