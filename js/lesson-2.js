@@ -88,6 +88,13 @@
 // третє - з четвертим і так до кінця.
 // В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
 
-const spred = [1, ...[2, 3, 4]];
+const Transaction = {
+  DEPOSIT: 'deposit',
+  WITHDRAW: 'withdraw',
+};
 
-console.log(...spred);
+const account = {
+  balance: 0,
+
+  transaction: [],
+};
