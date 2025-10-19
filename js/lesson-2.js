@@ -99,7 +99,8 @@ const account = {
   transactions: [],
 
   createTransaction(amount, type) {
-    return (obj1 = { id: amount, amount, type });
+    const obj1 = { id: amount, amount, type };
+    return obj1;
   },
 
   deposit(amount) {
@@ -118,5 +119,7 @@ const account = {
 
   getTransactionTotal(type) {},
 };
+
+account.deposit(300);
 
 console.log(account);
