@@ -96,6 +96,8 @@
 // якщо функція отримує масив - поверніть з функції найменше число,
 // в іншому випадку - поверніть 'Sory, it is not an array!'.
 
+function findSmallestNumber(numbers) {}
+
 // const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
 //!task-6
