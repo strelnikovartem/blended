@@ -88,67 +88,79 @@
 // третє - з четвертим і так до кінця.
 // В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
 
-const Transaction = {
-  DEPOSIT: 'deposit',
-  WITHDRAW: 'withdraw',
-};
+//!task-5
 
-const account = {
-  balance: 0,
+// Напишіть функцію findSmallestNumber(numbers),
+// яка шукає найменше число в масиві.
+// Додайте перевірку, що функція отримує саме масив, і
+// якщо функція отримує масив - поверніть з функції найменше число,
+// в іншому випадку - поверніть 'Sory, it is not an array!'.
 
-  transactions: [],
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
-  createTransaction(amount, type) {
-    const obj1 = { id: amount, amount, type };
-    return obj1;
-  },
+//!task-6
 
-  deposit(amount) {
-    this.balance += amount;
+// const Transaction = {
+//   DEPOSIT: 'deposit',
+//   WITHDRAW: 'withdraw',
+// };
 
-    const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
+// const account = {
+//   balance: 0,
 
-    this.transactions.push(transaction);
-  },
+//   transactions: [],
 
-  withdraw(amount) {
-    if (this.balance < amount) {
-      console.log('NO');
-      return;
-    }
+//   createTransaction(amount, type) {
+//     const obj1 = { id: amount, amount, type };
+//     return obj1;
+//   },
 
-    this.balance -= amount;
-    const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
+//   deposit(amount) {
+//     this.balance += amount;
 
-    this.transactions.push(transaction);
-  },
+//     const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
 
-  getBalance() {
-    return this.balance;
-  },
+//     this.transactions.push(transaction);
+//   },
 
-  getTransactionDetails(id) {
-    for (const item of this.transactions) {
-      if (item.id === id) {
-        return item;
-      }
-    }
-    return 'Not found';
-  },
+//   withdraw(amount) {
+//     if (this.balance < amount) {
+//       console.log('NO');
+//       return;
+//     }
 
-  getTransactionTotal(type) {
-    let res = 0;
+//     this.balance -= amount;
+//     const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
 
-    for (const item of this.transactions) {
-      if (item.type === type) {
-        res += item.amount;
-      }
-    }
-    return res;
-  },
-};
+//     this.transactions.push(transaction);
+//   },
 
-account.deposit(300);
-account.deposit(500);
+//   getBalance() {
+//     return this.balance;
+//   },
 
-console.log(account);
+//   getTransactionDetails(id) {
+//     for (const item of this.transactions) {
+//       if (item.id === id) {
+//         return item;
+//       }
+//     }
+//     return 'Not found';
+//   },
+
+//   getTransactionTotal(type) {
+//     let res = 0;
+
+//     for (const item of this.transactions) {
+//       if (item.type === type) {
+//         res += item.amount;
+//       }
+//     }
+//     return res;
+//   },
+// };
+
+// account.deposit(300);
+// account.deposit(500);
+
+// console.log(account);
