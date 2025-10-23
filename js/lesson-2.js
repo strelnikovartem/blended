@@ -97,9 +97,7 @@
 // в іншому випадку - поверніть 'Sory, it is not an array!'.
 
 function findSmallestNumber(numbers) {
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-  }
+  for (let i = 0; i < array.length; i++) {}
 }
 
 // const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
