@@ -99,12 +99,11 @@
 function findSmallestNumber(numbers) {
   let min = 0;
   for (let i = 0; i < numbers.length; i++) {
-    console.log((numbers[i] += `-${i}`));
-    // if (i === 0) {
-    //   min = i;
-    //   console.log(min);
-    // } else {
-    // }
+    if (i === 0) {
+      min = i;
+      console.log(min);
+    } else {
+    }
   }
 }
 
