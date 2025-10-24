@@ -97,8 +97,10 @@
 // в іншому випадку - поверніть 'Sory, it is not an array!'.
 
 function findSmallestNumber(numbers) {
+  console.log(numbers);
   let min = 0;
   for (let i = 0; i < numbers.length; i++) {
+    console.log(i);
     if (i === 0) {
       min = i;
       console.log(min);
