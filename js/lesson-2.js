@@ -100,7 +100,7 @@ function findSmallestNumber(numbers) {
   let min = 0;
   for (let i = 0; i < numbers.length; i++) {
     if (i === 0) {
-      min = i;
+      min = numbers[i];
       console.log(min);
     } else {
     }
