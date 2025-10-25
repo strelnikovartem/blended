@@ -101,13 +101,14 @@ function findSmallestNumber(numbers) {
   for (let i = 0; i < numbers.length; i++) {
     if (i === 0) {
       min = numbers[i];
-      console.log(min);
-    } else {
+    } else if (numbers[i] < min) {
+      min = numbers[i];
     }
   }
+  return min;
 }
 
-const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
+const numbers = [12, 5, 35, 56, 1, 24, 7, 80, 3];
 
 console.log(findSmallestNumber(numbers));
 //!task-6
