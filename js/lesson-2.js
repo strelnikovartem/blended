@@ -96,21 +96,21 @@
 // якщо функція отримує масив - поверніть з функції найменше число,
 // в іншому випадку - поверніть 'Sory, it is not an array!'.
 
-function findSmallestNumber(numbers) {
-  let min = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    if (i === 0) {
-      min = numbers[i];
-    } else if (numbers[i] < min) {
-      min = numbers[i];
-    }
-  }
-  return min;
-}
+// function findSmallestNumber(numbers) {
+//   let min = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (i === 0) {
+//       min = numbers[i];
+//     } else if (numbers[i] < min) {
+//       min = numbers[i];
+//     }
+//   }
+//   return min;
+// }
 
-const numbers = [12, 5, 35, 56, 1, 24, 7, 80, 3];
+// const numbers = [12, 5, 35, 56, 1, 24, 7, 80, 3];
 
-console.log(findSmallestNumber(numbers));
+// console.log(findSmallestNumber(numbers));
 //!task-6
 
 // Напишіть функцію findLongestWord(string), яка
@@ -245,3 +245,5 @@ console.log(findSmallestNumber(numbers));
 // account.deposit(500);
 
 // console.log(account);
+
+//! m-9
