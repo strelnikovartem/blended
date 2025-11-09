@@ -247,3 +247,5 @@
 // console.log(account);
 
 //! m-9
+
+const LS_KEY = 'array of names';
