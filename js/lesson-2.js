@@ -248,12 +248,14 @@
 
 //! m-9
 
-const LS_KEY = 'array of names';
+// const LS_KEY = 'array of names';
 
-const names = ['Alice', 'Bob', 'Jeck'];
+// const names = ['Alice', 'Bob', 'Jeck'];
 
-localStorage.setItem(LS_KEY, JSON.stringify(names));
+// localStorage.setItem(LS_KEY, JSON.stringify(names));
 
-const arr = localStorage.getItem(LS_KEY);
+// const arr = localStorage.getItem(LS_KEY);
 
-console.log(JSON.parse(arr));
+// console.log(JSON.parse(arr));
+
+//!form
