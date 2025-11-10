@@ -253,3 +253,5 @@ const LS_KEY = 'array of names';
 const names = ['Alice', 'Bob', 'Jeck'];
 
 localStorage.setItem(LS_KEY, names);
+
+const arr = localStorage.getItem();
