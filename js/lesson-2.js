@@ -256,4 +256,4 @@ localStorage.setItem(LS_KEY, JSON.stringify(names));
 
 const arr = localStorage.getItem(LS_KEY);
 
-console.log(arr);
+console.log(JSON.parse(arr));
