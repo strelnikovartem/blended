@@ -8,8 +8,20 @@
   </head>
   <body>
     <form class="feedback-form">
-      <textarea name="message"></textarea>
-      <button type="submit">Send feedback</button>
+      <label>
+        <b>Name</b>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          value="Anonymous"
+        />
+      </label>
+      <label>
+        <b>Message</b>
+        <textarea name="message" rows="6"></textarea>
+      </label>
+      <button type="submit">Submit</button>
     </form>
     <script type="module" src="./js/task-1.js"></script>
     <script type="module" src="./js/task-2.js"></script>
