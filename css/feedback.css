@@ -26,6 +26,11 @@ img {
   height: auto;
 }
 
+.div {
+  display: flex;
+  width: 100%;
+}
+
 .feedback-form > label {
   width: 500px;
   margin-bottom: 16px;
