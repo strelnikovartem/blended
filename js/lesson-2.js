@@ -275,4 +275,4 @@ function registerGuest(name, callback) {
   callback(name);
 }
 
-registerGuest('Mango', greet);
+registerGuest('Mango', notify);
