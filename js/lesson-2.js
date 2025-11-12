@@ -274,3 +274,5 @@ function registerGuest(name, callback) {
   console.log(`Registering ${name}!`);
   callback(name);
 }
+
+registerGuest('Mango', greet);
