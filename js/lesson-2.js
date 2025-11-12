@@ -259,3 +259,13 @@
 // console.log(JSON.parse(arr));
 
 //!form
+
+//!call-back
+
+function greet(name) {
+  console.log(`Welcome ${name}!`);
+}
+
+function notify(name) {
+  console.log(`Dear ${name}, your room will be ready in 30 minutes`);
+}
