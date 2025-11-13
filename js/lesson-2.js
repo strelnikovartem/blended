@@ -271,3 +271,5 @@ function classicAdd(a, b, c) {
 const arrowAdd = (a, b, c) => {
   return a + b + c;
 };
+
+console.log(arrowAdd(1, 2, 3));
