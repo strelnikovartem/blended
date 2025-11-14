@@ -272,4 +272,4 @@ const arrowAdd = (a, b, c) => {
   return a + b + c;
 };
 
-console.log(arrowAdd(1, 2, 3));
+console.log(arrowAdd(1, 2, 3, 5));
