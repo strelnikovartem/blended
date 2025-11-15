@@ -281,3 +281,5 @@ const player = {
   age: 10,
   iaOnline: true,
 };
+
+console.log(player.name);
