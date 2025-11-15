@@ -262,14 +262,22 @@
 
 //!call-back
 
-// Звичайне оголошення функції
-function classicAdd(a, b, c) {
-  return a + b + c;
-}
+// // Звичайне оголошення функції
+// function classicAdd(a, b, c) {
+//   return a + b + c;
+// }
 
-// Те саме стрілочною функцією
-const arrowAdd = (a, b, c) => {
-  return a + b + c;
+// // Те саме стрілочною функцією
+// const arrowAdd = (a, b, c) => {
+//   return a + b + c;
+// };
+
+// console.log(arrowAdd(1, 2, 3, 5));
+
+//!Obj
+
+const player = {
+  name: 'Dan',
+  age: 10,
+  iaOnline: true,
 };
-
-console.log(arrowAdd(1, 2, 3, 5));
