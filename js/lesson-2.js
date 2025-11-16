@@ -277,7 +277,10 @@
 //!Obj
 
 function foo(key, value) {
-  return {};
+  return {
+    [key]: value,
+  };
 }
 
 console.log(foo('name', 'Alice'));
+console.log(foo('age', 23));
