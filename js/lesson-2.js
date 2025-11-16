@@ -289,4 +289,4 @@ const player = {
 
 player.age = 20;
 
-console.log(player.skills);
+console.log(player.skills.css);
