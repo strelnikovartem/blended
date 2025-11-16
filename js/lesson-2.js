@@ -277,3 +277,7 @@
 //!Obj
 
 const user = prompt('name');
+
+const obj = {
+  [user]: 'player',
+};
