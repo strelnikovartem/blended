@@ -276,17 +276,8 @@
 
 //!Obj
 
-const player = {
-  name: 'Dan',
-  age: 10,
-  iaOnline: true,
-  skills: {
-    html: true,
-    css: true,
-    js: false,
-  },
-};
+function foo(key, value) {
+  return {};
+}
 
-player.age = 20;
-
-console.log(player.skills.css);
+console.log(foo('name', 'Alice'));
