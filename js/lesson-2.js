@@ -281,3 +281,5 @@ const user = prompt('name');
 const obj = {
   [user]: 'player',
 };
+
+console.log(obj);
