@@ -276,11 +276,4 @@
 
 //!Obj
 
-function foo(key, value) {
-  return {
-    [key]: value,
-  };
-}
-
-console.log(foo('name', 'Alice'));
-console.log(foo('age', 23));
+const user = prompt('name');
