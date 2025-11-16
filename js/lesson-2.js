@@ -280,8 +280,13 @@ const player = {
   name: 'Dan',
   age: 10,
   iaOnline: true,
+  skills: {
+    html: true,
+    css: true,
+    js: false,
+  },
 };
 
 player.age = 20;
 
-console.log(player);
+console.log(player.skills);
