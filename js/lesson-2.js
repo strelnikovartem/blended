@@ -282,4 +282,6 @@ const player = {
   iaOnline: true,
 };
 
-console.log(player.name);
+player.age = 20;
+
+console.log(player);
