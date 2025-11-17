@@ -276,10 +276,8 @@
 
 //!Obj
 
-const user = prompt('name');
-
-const obj = {
-  [user]: 'player',
+const feedback = {
+  good: 5,
+  neutral: 10,
+  bad: 3,
 };
-
-console.log(obj);
