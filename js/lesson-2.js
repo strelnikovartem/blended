@@ -283,11 +283,8 @@ const user = {
   premium: true,
 };
 
-user.mood = 'happy';
-user.name = 'Bob';
-
-const keys = Object.keys(user);
-
-for (const key of keys) {
-  console.log(`${key}: ${user[key]}`);
+function foo(obj) {
+  obj.mood = 'happy';
 }
+
+console.log(foo(user));
