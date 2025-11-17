@@ -291,3 +291,7 @@ const feedback = {
 // console.log(total);
 
 const keys = Object.keys(feedback);
+
+for (const key of keys) {
+  console.log(key);
+}
