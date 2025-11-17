@@ -281,3 +281,7 @@ const feedback = {
   neutral: 10,
   bad: 3,
 };
+
+for (const key in feedback) {
+  console.log(key);
+}
