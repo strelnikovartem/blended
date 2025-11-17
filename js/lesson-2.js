@@ -282,16 +282,16 @@ const feedback = {
   bad: 3,
 };
 
-// let total = 0;
+let total = 0;
 
 // for (const key in feedback) {
 //   total += feedback[key];
 // }
 
-// console.log(total);
-
 const keys = Object.keys(feedback);
 
 for (const key of keys) {
-  console.log(key);
+  total += feedback[key];
 }
+
+console.log(total);
