@@ -282,6 +282,9 @@ const feedback = {
   bad: 3,
 };
 
+let total = 0;
+
 for (const key in feedback) {
-  console.log(key);
+  total += [key];
+  return total;
 }
