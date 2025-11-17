@@ -276,21 +276,21 @@
 
 //!Obj
 
-const user = {
-  name: 'Alice',
-  age: 10,
-  hobby: 'html',
-  premium: true,
+const salaries = {
+  John: 100,
+  Ann: 200,
+  Bob: 300,
 };
 
-function foo(obj) {
-  obj.mood = 'happy';
+function summa(obj) {
+  let total = 0;
 
-  const keys = Object.keys(obj);
+  const values = Object.values(obj);
 
-  for (const key of keys) {
-    console.log(`${key}: ${obj[key]}`);
+  for (const value of values) {
+    total += value;
   }
+  return total;
 }
 
-foo(user);
+console.log(summa(salaries));
