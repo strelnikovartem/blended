@@ -286,4 +286,6 @@ const user = {
 user.mood = 'happy';
 user.name = 'Bob';
 
-console.log(user);
+const keys = Object.keys(user);
+
+console.log(keys);
