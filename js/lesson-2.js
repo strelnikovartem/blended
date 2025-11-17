@@ -284,14 +284,6 @@ const feedback = {
 
 let total = 0;
 
-// for (const key in feedback) {
-//   total += feedback[key];
-// }
+const values = Object.values(feedback);
 
-const keys = Object.keys(feedback);
-
-for (const key of keys) {
-  total += feedback[key];
-}
-
-console.log(total);
+console.log(values);
