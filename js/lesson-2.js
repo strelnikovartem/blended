@@ -286,4 +286,8 @@ let total = 0;
 
 const values = Object.values(feedback);
 
-console.log(values);
+for (const value of values) {
+  total += value;
+}
+
+console.log(total);
