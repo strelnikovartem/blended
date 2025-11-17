@@ -285,6 +285,12 @@ const user = {
 
 function foo(obj) {
   obj.mood = 'happy';
+
+  const keys = Object.keys(obj);
+
+  for (const key of keys) {
+    console.log(`${key}: ${obj[key]}`);
+  }
 }
 
-console.log(foo(user));
+foo(user);
