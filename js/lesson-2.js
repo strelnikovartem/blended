@@ -285,7 +285,7 @@ const feedback = {
 let total = 0;
 
 for (const key in feedback) {
-  total += [key];
+  total += feedback[key];
 }
 
 console.log(total);
