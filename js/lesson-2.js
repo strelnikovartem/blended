@@ -286,5 +286,6 @@ let total = 0;
 
 for (const key in feedback) {
   total += [key];
-  return total;
 }
+
+console.log(total);
