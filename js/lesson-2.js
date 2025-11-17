@@ -291,5 +291,3 @@ const feedback = {
 // console.log(total);
 
 const keys = Object.keys(feedback);
-
-console.log(keys);
