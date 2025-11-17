@@ -275,3 +275,10 @@
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
+
+const user = {
+  name: 'Alice',
+  age: 10,
+  hobby: 'html',
+  premium: true,
+};
