@@ -284,5 +284,6 @@ const user = {
 };
 
 user.mood = 'happy';
+user.name = 'Bob';
 
 console.log(user);
