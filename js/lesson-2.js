@@ -275,19 +275,3 @@
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
-
-const feedback = {
-  good: 5,
-  neutral: 10,
-  bad: 3,
-};
-
-let total = 0;
-
-const values = Object.values(feedback);
-
-for (const value of values) {
-  total += value;
-}
-
-console.log(total);
