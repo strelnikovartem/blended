@@ -280,4 +280,9 @@ const playlist = {
   name: 'My playlist',
   rating: 5,
   tracks: ['Track-1', 'Track-2', 'Track-3'],
+  chengeName(newName) {
+    this.name = newName;
+  },
 };
+
+console.log(playlist);
