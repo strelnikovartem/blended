@@ -276,6 +276,8 @@
 
 //!Obj
 
-const numbers = [11, 42, 31, 4, 7];
+function foo(params) {
+  console.log(params);
+}
 
-console.log(Math.min(...numbers));
+foo([1, 2]);
