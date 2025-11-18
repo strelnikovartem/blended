@@ -276,6 +276,6 @@
 
 //!Obj
 
-const numbers = [1000, ...[1, 2, 3], 2000, ...[4, 5, 6], 3000];
+const numbers = [11, 42, 31, 4, 7];
 
-console.log(numbers);
+console.log(Math.min(...numbers));
