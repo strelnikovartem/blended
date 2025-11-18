@@ -276,4 +276,6 @@
 
 //!Obj
 
-const numbers = [];
+const numbers = [1000, [1, 2, 3], 2000, [4, 5, 6], 3000];
+
+console.log(numbers);
