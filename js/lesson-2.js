@@ -276,8 +276,4 @@
 
 //!Obj
 
-function foo(...rest) {
-  console.log(rest);
-}
-
-foo({ x: 1, y: 2 });
+const numbers = [];
