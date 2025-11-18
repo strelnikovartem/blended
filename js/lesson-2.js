@@ -276,8 +276,8 @@
 
 //!Obj
 
-function foo(params) {
-  console.log(params);
+function foo(a, s) {
+  console.log(a, s);
 }
 
-foo([1, 2]);
+foo(...[1, 2]);
