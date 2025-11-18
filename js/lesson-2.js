@@ -276,9 +276,8 @@
 
 //!Obj
 
-function foo(...args) {
-  console.log(args);
+function foo(...rest) {
+  console.log(rest);
 }
 
-foo(10, 20);
-foo(1, 2, 3, 4, 5);
+foo({ x: 1, y: 2 });
