@@ -276,26 +276,7 @@
 
 //!Obj
 
-const playlist = {
-  name: 'My playlist',
-  rating: 5,
-  tracks: ['Track-1', 'Track-2', 'Track-3'],
-  chengeName(newName) {
-    this.name = newName;
-  },
-  addTracks(newTrack) {
-    this.tracks.push(newTrack);
-  },
-  updateRating(newRating) {
-    this.rating = newRating;
-  },
-  getTrackCount() {
-    return this.tracks.length;
-  },
-};
+function foo() {}
 
-playlist.chengeName('Best');
-playlist.addTracks('Track-4');
-playlist.updateRating(10);
-
-console.log(playlist.getTrackCount());
+foo(10, 20);
+foo(1, 2, 3, 4, 5);
