@@ -289,10 +289,13 @@ const playlist = {
   updateRating(newRating) {
     this.rating = newRating;
   },
+  getTrackCount() {
+    return this.tracks.length;
+  },
 };
 
 playlist.chengeName('Best');
 playlist.addTracks('Track-4');
 playlist.updateRating(10);
 
-console.log(playlist);
+console.log(playlist.getTrackCount());
