@@ -276,7 +276,9 @@
 
 //!Obj
 
-function foo() {}
+function foo() {
+  console.log(arguments);
+}
 
 foo(10, 20);
 foo(1, 2, 3, 4, 5);
