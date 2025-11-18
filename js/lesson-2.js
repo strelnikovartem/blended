@@ -276,4 +276,8 @@
 
 //!Obj
 
-const playlist = {};
+const playlist = {
+  name: 'My playlist',
+  rating: 5,
+  tracks: ['Track-1', 'Track-2', 'Track-3'],
+};
