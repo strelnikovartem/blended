@@ -276,21 +276,4 @@
 
 //!Obj
 
-const salaries = {
-  John: 100,
-  Ann: 200,
-  Bob: 300,
-};
-
-function summa(obj) {
-  let total = 0;
-
-  const values = Object.values(obj);
-
-  for (const value of values) {
-    total += value;
-  }
-  return total;
-}
-
-console.log(summa(salaries));
+const playlist = {};
