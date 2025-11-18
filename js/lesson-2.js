@@ -283,6 +283,9 @@ const playlist = {
   chengeName(newName) {
     this.name = newName;
   },
+  addTracks(newTrack) {},
 };
+
+playlist.chengeName('Best');
 
 console.log(playlist);
