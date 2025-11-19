@@ -62,7 +62,9 @@ const account = {
    * Метод повертає поточний баланс
    */
 
-  getDeposit() {},
+  getDeposit() {
+    return this.balanse;
+  },
 
   /*
    * Метод шукає та повертає об'єкт транзакції по id
