@@ -13,7 +13,7 @@ const Transaction = {
 
 const account = {
   balanse: 0,
-  transaction: [],
+  transactions: [],
 
   /*
    * Метод створює та повертає об'єкт транзакції.
@@ -31,7 +31,9 @@ const account = {
    * після чого додає його до історії транзакцій
    */
 
-  deposit(amount) {},
+  deposit(amount) {
+    this.createTransaction();
+  },
 
   /*
    * Метод, що відповідає за зняття суми з балансу.
