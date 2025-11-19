@@ -12,10 +12,7 @@ const Transaction = {
  */
 
 const account = {
-  // Поточний баланс рахунку
   balanse: 0,
-
-  // Історія транзакцій
   transaction: [],
 
   /*
@@ -23,7 +20,9 @@ const account = {
    * Приймає суму та тип транзакції.
    */
 
-  createTransaction(amount, type) {},
+  createTransaction(amount, type) {
+    return { id: account, amount, type };
+  },
 
   /*
    * Метод, що відповідає за додавання суми до балансу.

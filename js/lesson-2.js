@@ -275,12 +275,3 @@
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
-
-function player(name, age) {
-  return {
-    name,
-    age,
-  };
-}
-
-console.log(player('Ali', 50));
