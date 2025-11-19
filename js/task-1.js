@@ -21,7 +21,7 @@ const account = {
    */
 
   createTransaction(amount, type) {
-    return { id: account, amount, type };
+    return { id: amount, amount, type };
   },
 
   /*
@@ -33,7 +33,7 @@ const account = {
 
   deposit(amount) {
     this.balanse += amount;
-    const transaction = this.createTransaction(amount);
+    const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
     this.transactions.push(transaction);
   },
 
@@ -47,7 +47,14 @@ const account = {
    * про те, що зняття такої суми не можливе, недостатньо коштів.
    */
 
-  withdraw() {},
+  withdraw(amount) {
+    if (this.balanse < amount) {
+      console.log('no money');
+      return;
+    }
+
+    this.balanse -= amount;
+  },
 
   /*
    * Метод повертає поточний баланс
