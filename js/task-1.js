@@ -70,7 +70,11 @@ const account = {
    * Метод шукає та повертає об'єкт транзакції по id
    */
 
-  getTransactionDetails() {},
+  getTransactionDetails(id) {
+    for (const item of this.transactions) {
+      console.log(item);
+    }
+  },
 
   /*
    * Метод повертає кількість коштів
@@ -86,7 +90,7 @@ account.deposit(400);
 account.withdraw(300);
 
 // // console.log(account.getBalance());
-// // console.log(account.getTransactionDetails(200));
+console.log(account.getTransactionDetails(200));
 // console.log(account.getTransactionTotal(Transaction.WITHDRAW));
 
 console.log(account);
