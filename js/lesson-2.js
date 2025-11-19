@@ -275,9 +275,3 @@
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
-
-function foo(a, s) {
-  console.log(a, s);
-}
-
-foo(...[1, 2]);
