@@ -81,7 +81,7 @@ const account = {
 account.deposit(200);
 account.deposit(400);
 
-account.withdraw(1000);
+account.withdraw(300);
 
 // // console.log(account.getBalance());
 // // console.log(account.getTransactionDetails(200));
