@@ -275,3 +275,14 @@
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
+
+function player(name, age) {
+  const user = {
+    name,
+    age,
+  };
+
+  return user;
+}
+
+console.log(player('Ali', 50));
