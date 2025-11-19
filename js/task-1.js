@@ -54,6 +54,8 @@ const account = {
     }
 
     this.balanse -= amount;
+    const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
+    this.transactions.push(transaction);
   },
 
   /*
@@ -77,9 +79,9 @@ const account = {
 };
 
 account.deposit(200);
-// account.deposit(400);
+account.deposit(400);
 
-// account.withdraw(100);
+account.withdraw(100);
 
 // // console.log(account.getBalance());
 // // console.log(account.getTransactionDetails(200));
