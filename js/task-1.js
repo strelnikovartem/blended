@@ -32,7 +32,9 @@ const account = {
    */
 
   deposit(amount) {
-    this.createTransaction();
+    this.balanse += amount;
+    const transaction = this.createTransaction(amount);
+    this.transactions.push(transaction);
   },
 
   /*
