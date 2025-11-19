@@ -23,7 +23,7 @@ const account = {
    * Приймає суму та тип транзакції.
    */
 
-  createTransaction(amount, amount, summa) {},
+  createTransaction(amount, type) {},
 
   /*
    * Метод, що відповідає за додавання суми до балансу.
@@ -31,6 +31,8 @@ const account = {
    * Викликає createTransaction для створення об'єкта транзакції
    * після чого додає його до історії транзакцій
    */
+
+  deposit(amount) {},
 
   /*
    * Метод, що відповідає за зняття суми з балансу.
