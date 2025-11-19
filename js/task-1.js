@@ -90,3 +90,4 @@ account.withdraw(300);
 // console.log(account.getTransactionTotal(Transaction.WITHDRAW));
 
 console.log(account);
+console.log(account.getDeposit());
