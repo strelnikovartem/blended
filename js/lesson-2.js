@@ -277,12 +277,10 @@
 //!Obj
 
 function player(name, age) {
-  const user = {
+  return {
     name,
     age,
   };
-
-  return user;
 }
 
 console.log(player('Ali', 50));
