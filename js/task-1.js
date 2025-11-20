@@ -20,9 +20,7 @@ const account = {
    * Приймає суму та тип транзакції.
    */
 
-  createTransaction(amount, type) {
-    return { id: amount, amount, type };
-  },
+  createTransaction(amount, type) {},
 
   /*
    * Метод, що відповідає за додавання суми до балансу.
@@ -31,11 +29,7 @@ const account = {
    * після чого додає його до історії транзакцій
    */
 
-  deposit(amount) {
-    this.balanse += amount;
-    const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
-    this.transactions.push(transaction);
-  },
+  deposit(amount) {},
 
   /*
    * Метод, що відповідає за зняття суми з балансу.
@@ -47,63 +41,37 @@ const account = {
    * про те, що зняття такої суми не можливе, недостатньо коштів.
    */
 
-  withdraw(amount) {
-    if (this.balanse < amount) {
-      console.log('no money');
-      return;
-    }
-
-    this.balanse -= amount;
-    const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
-    this.transactions.push(transaction);
-  },
+  withdraw(amount) {},
 
   /*
    * Метод повертає поточний баланс
    */
 
-  getDeposit() {
-    return this.balanse;
-  },
+  getDeposit() {},
 
   /*
    * Метод шукає та повертає об'єкт транзакції по id
    */
 
-  getTransactionDetails(id) {
-    for (const item of this.transactions) {
-      if (item.id === id) {
-        return item;
-      }
-    }
-    return 'not found';
-  },
+  getTransactionDetails(id) {},
 
   /*
    * Метод повертає кількість коштів
    * певного типу транзакції з усієї історії транзакцій
    */
 
-  getTransactionTotal(type) {
-    let sum = 0;
-    for (const item of this.transactions) {
-      if (item.type === type) {
-        sum += item.amount;
-      }
-    }
-    return sum;
-  },
+  getTransactionTotal(type) {},
 };
 
-account.deposit(200);
-account.deposit(400);
+// account.deposit(200);
+// account.deposit(400);
 
-account.withdraw(300);
-account.withdraw(200);
+// account.withdraw(300);
+// account.withdraw(200);
 
 // // console.log(account.getBalance());
 // console.log(account.getTransactionDetails(100));
-console.log(account.getTransactionTotal(Transaction.DEPOSIT));
+// console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 
 // console.log(account);
 // console.log(account.getDeposit());
