@@ -75,7 +75,9 @@ const account = {
 
   getTransactionDetails(id) {
     for (const item of this.transactions) {
-      return item;
+      if (item.id === id) {
+        return item;
+      }
     }
   },
 
@@ -94,7 +96,9 @@ account.withdraw(800);
 account.withdraw(200);
 
 // // console.log(account.getBalance());
-console.log(account.getTransactionDetails());
+console.log(
+  account.getTransactionDetails('ff34ce70-89a5-4091-bc87-51a78eb46cda')
+);
 // console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 
 console.log(account);
