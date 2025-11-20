@@ -51,7 +51,11 @@ const account = {
    * про те, що зняття такої суми не можливе, недостатньо коштів.
    */
 
-  withdraw(amount) {},
+  withdraw(amount) {
+    if (amount > this.balanse) {
+      return `недостатньо коштів`;
+    }
+  },
 
   /*
    * Метод повертає поточний баланс
@@ -76,7 +80,7 @@ const account = {
 account.deposit(200);
 account.deposit(400);
 
-// account.withdraw(300);
+account.withdraw(800);
 // account.withdraw(200);
 
 // // console.log(account.getBalance());
