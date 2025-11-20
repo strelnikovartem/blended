@@ -73,8 +73,8 @@ const account = {
   getTransactionTotal(type) {},
 };
 
-// account.deposit(200);
-// account.deposit(400);
+account.deposit(200);
+account.deposit(400);
 
 // account.withdraw(300);
 // account.withdraw(200);
@@ -83,5 +83,5 @@ const account = {
 // console.log(account.getTransactionDetails(100));
 // console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 
-// console.log(account);
+console.log(account);
 // console.log(account.getDeposit());
