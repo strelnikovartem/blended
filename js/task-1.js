@@ -55,6 +55,7 @@ const account = {
     if (amount > this.balanse) {
       return `недостатньо коштів`;
     }
+    this.balanse -= amount;
   },
 
   /*
