@@ -97,16 +97,14 @@ const account = {
   },
 };
 
-account.deposit(200);
-account.deposit(300);
-account.deposit(400);
+// account.deposit(200);
+// account.deposit(300);
+// account.deposit(400);
+// account.withdraw(900);
+// account.withdraw(200);
 
-account.withdraw(900);
-account.withdraw(200);
-
-// // console.log(account.getBalance());
-console.log(account.getTransactionDetails(200));
-console.log(account.getTransactionTotal(Transaction.WITHDRAW));
-
-console.log(account);
+// console.log(account.getBalance());
+// console.log(account.getTransactionDetails(200));
+// console.log(account.getTransactionTotal(Transaction.WITHDRAW));
+// console.log(account);
 // console.log(account.getDeposit());
