@@ -72,8 +72,11 @@ const account = {
 
   getTransactionDetails(id) {
     for (const item of this.transactions) {
-      console.log(item);
+      if (item.id === id) {
+        return item;
+      }
     }
+    return 'not found';
   },
 
   /*
@@ -81,17 +84,26 @@ const account = {
    * певного типу транзакції з усієї історії транзакцій
    */
 
-  getTransactionTotal() {},
+  getTransactionTotal(type) {
+    let sum = 0;
+    for (const item of this.transactions) {
+      if (item.type === type) {
+        sum += item.amount;
+      }
+    }
+    return sum;
+  },
 };
 
 account.deposit(200);
 account.deposit(400);
 
 account.withdraw(300);
+account.withdraw(200);
 
 // // console.log(account.getBalance());
-console.log(account.getTransactionDetails(200));
-// console.log(account.getTransactionTotal(Transaction.WITHDRAW));
+// console.log(account.getTransactionDetails(100));
+console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 
-console.log(account);
-console.log(account.getDeposit());
+// console.log(account);
+// console.log(account.getDeposit());
