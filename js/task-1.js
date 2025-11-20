@@ -22,7 +22,7 @@ const account = {
 
   createTransaction(amount, type) {
     return {
-      id: Date.now(),
+      id: crypto.randomUUID(),
       amount,
       type,
     };
