@@ -94,9 +94,7 @@ account.withdraw(800);
 account.withdraw(200);
 
 // // console.log(account.getBalance());
-console.log(
-  account.getTransactionDetails('07975bf1-5f58-4e53-bbd0-a4a7430b621a')
-);
+console.log(account.getTransactionDetails());
 // console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 
 console.log(account);
