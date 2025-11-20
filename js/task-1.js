@@ -20,7 +20,13 @@ const account = {
    * Приймає суму та тип транзакції.
    */
 
-  createTransaction(amount, type) {},
+  createTransaction(amount, type) {
+    return {
+      id: Date.now(),
+      amount,
+      type,
+    };
+  },
 
   /*
    * Метод, що відповідає за додавання суми до балансу.
@@ -29,7 +35,11 @@ const account = {
    * після чого додає його до історії транзакцій
    */
 
-  deposit(amount) {},
+  deposit(amount) {
+    this.balanse += amount;
+    const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
+    this.transactions.push(transaction);
+  },
 
   /*
    * Метод, що відповідає за зняття суми з балансу.
