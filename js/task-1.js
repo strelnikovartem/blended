@@ -86,18 +86,27 @@ const account = {
    * певного типу транзакції з усієї історії транзакцій
    */
 
-  getTransactionTotal(type) {},
+  getTransactionTotal(type) {
+    let sum = 0;
+    for (const item of this.transactions) {
+      if (item.type === type) {
+        sum += item.amount;
+      }
+    }
+    return sum;
+  },
 };
 
 account.deposit(200);
+account.deposit(300);
 account.deposit(400);
 
-account.withdraw(800);
+account.withdraw(900);
 account.withdraw(200);
 
 // // console.log(account.getBalance());
 console.log(account.getTransactionDetails(200));
-// console.log(account.getTransactionTotal(Transaction.DEPOSIT));
+console.log(account.getTransactionTotal(Transaction.WITHDRAW));
 
 console.log(account);
 // console.log(account.getDeposit());
