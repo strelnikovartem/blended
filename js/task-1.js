@@ -56,6 +56,8 @@ const account = {
       return `недостатньо коштів`;
     }
     this.balanse -= amount;
+    const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
+    this.transactions.push(transaction);
   },
 
   /*
