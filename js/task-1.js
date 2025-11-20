@@ -53,7 +53,8 @@ const account = {
 
   withdraw(amount) {
     if (amount > this.balanse) {
-      return `недостатньо коштів`;
+      console.log('недостатньо коштів');
+      return;
     }
     this.balanse -= amount;
     const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
@@ -84,7 +85,7 @@ account.deposit(200);
 account.deposit(400);
 
 account.withdraw(800);
-// account.withdraw(200);
+account.withdraw(200);
 
 // // console.log(account.getBalance());
 // console.log(account.getTransactionDetails(100));
