@@ -1,9 +1,9 @@
 function fnA(name, callback) {
-  return fnB();
+  callback(name);
 }
 
-function fnB() {
-  console.log('hello');
+function fnB(a) {
+  console.log(`hello ${a}`);
 }
 
 fnA('Alice', fnB);
