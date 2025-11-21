@@ -1,1 +1,1 @@
-
+function each(array, callback) {}
