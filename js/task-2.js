@@ -12,5 +12,4 @@ function fnB(s, w) {
   return s - w;
 }
 
-console.log(calc(1, 2));
-console.log(calc1(10, 2));
+console.log(calc(1, 2, callback));
