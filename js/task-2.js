@@ -1,4 +1,6 @@
-function fnA() {}
+function fnA(name, callback) {
+  return fnB();
+}
 
 function fnB() {
   console.log('hello');
