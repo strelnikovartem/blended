@@ -1,4 +1,4 @@
-function calc(a, b) {
+function calc(a, b, callback) {
   const str = 'lol';
   console.log(str);
   return a + b;
