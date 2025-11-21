@@ -4,4 +4,4 @@ function fnB() {
   console.log('hello');
 }
 
-console.log(fnB);
+fnA('Alice', fnB);
