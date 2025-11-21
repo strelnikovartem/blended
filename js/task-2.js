@@ -4,4 +4,4 @@ function fnB() {
   console.log('hello');
 }
 
-fnB();
+console.log(fnB);
