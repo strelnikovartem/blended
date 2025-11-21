@@ -1,7 +1,7 @@
 function calc(a, b, callback) {
   const str = 'lol';
   console.log(str);
-  callback(a, b);
+  return callback(a, b);
 }
 
 function fnA(d, f) {
@@ -12,4 +12,4 @@ function fnB(s, w) {
   return s - w;
 }
 
-console.log(calc(1, 2, fnA));
+console.log(calc(1, 2, fnB));
