@@ -1,9 +1,7 @@
-function fnA(name, callback) {
-  callback(name);
+function calc(a, b) {
+  const str = 'lol';
+  console.log(str);
+  return a + b;
 }
 
-function fnB(a) {
-  console.log(`hello ${a}`);
-}
-
-fnA('Alice', fnB);
+console.log(calc(1, 2));
