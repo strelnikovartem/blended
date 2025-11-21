@@ -8,12 +8,14 @@ function calc(a, b, callback) {
 //   return d + f;
 // }
 
-function fnB(s, w) {
-  return s - w;
-}
-
 console.log(
   calc(1, 2, function (q, w) {
     return q + w;
+  })
+);
+
+console.log(
+  calc(10, 2, function (q, w) {
+    return q - w;
   })
 );
