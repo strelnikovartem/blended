@@ -4,4 +4,6 @@ function calc(a, b) {
   return a + b;
 }
 
+function calc1(a, b) {}
+
 console.log(calc(1, 2));
