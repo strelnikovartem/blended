@@ -20,7 +20,7 @@ console.log(
 );
 
 console.log(
-  each([64, 49, 36, 24], function (value) {
+  each([64, 49, 36, 25], function (value) {
     return Math.sqrt(value);
   })
 );
