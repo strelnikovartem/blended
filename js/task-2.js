@@ -1,4 +1,6 @@
 function each(array, callback) {
+  const res = [];
+
   for (const item of array) {
     console.log(item);
   }
