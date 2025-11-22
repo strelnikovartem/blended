@@ -2,8 +2,9 @@ function each(array, callback) {
   const res = [];
 
   for (const item of array) {
-    console.log(item);
+    res.push(callback(item));
   }
+  return res;
 }
 
 console.log(
