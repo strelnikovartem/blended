@@ -8,19 +8,19 @@ function each(array, callback) {
 }
 
 console.log(
-  each([24, 61, 13, 33], function (value) {
+  each([64, 49, 36, 24], function (value) {
     return value * 2;
   })
 );
 
 console.log(
-  each([24, 61, 13, 33], function (value) {
+  each([64, 49, 36, 24], function (value) {
     return value - 10;
   })
 );
 
 console.log(
-  each([24, 61, 13, 33], function (value) {
+  each([64, 49, 36, 24], function (value) {
     return Math.sqrt(value);
   })
 );
