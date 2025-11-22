@@ -1,3 +1,5 @@
-const arrowFoo = (a, b) => a + b;
-
-console.log(arrowFoo(2, 3));
+function foo() {
+  return {
+    x: 10,
+  };
+}
