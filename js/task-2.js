@@ -2,8 +2,8 @@ function foo(a, b, c) {
   return a + b + c;
 }
 
-const arrowFoo = (a, b, c) => {
-  return a + b + c;
+const arrowFoo = (...a) => {
+  return a;
 };
 
 console.log(foo(1, 2, 3));
