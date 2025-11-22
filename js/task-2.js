@@ -1,5 +1,3 @@
-function foo() {
-  return {
-    x: 10,
-  };
-}
+const foo = () => ({ x: 10 });
+
+console.log(foo());
