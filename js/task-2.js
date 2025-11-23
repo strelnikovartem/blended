@@ -12,9 +12,7 @@ const allCars = [
 ];
 
 const getModels = cars => {
-  const res = cars.map(item => {
-    return item.model;
-  });
+  const res = cars.map(item => item.model);
   return res;
 };
 
