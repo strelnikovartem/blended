@@ -11,14 +11,4 @@ const allCars = [
   { make: 'Ford', model: 'Explorer', amount: 6, price: 31660 },
 ];
 
-const getModels = cars => {
-  const res = [];
-
-  cars.forEach(item => {
-    res.push(item.model);
-  });
-
-  return res;
-};
-
 console.log(getModels(allCars));
