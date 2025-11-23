@@ -11,4 +11,8 @@ const allCars = [
   { make: 'Ford', model: 'Explorer', amount: 6, price: 31660 },
 ];
 
+const getModels = cars => {
+  const res = cars.map();
+};
+
 console.log(getModels(allCars));
