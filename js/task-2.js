@@ -12,7 +12,9 @@ const allCars = [
 ];
 
 const makeCarsWithDiscount = cars => {
-  console.log(cars);
+  cars.map(item => {
+    console.log(item);
+  });
 };
 
 console.log(makeCarsWithDiscount(allCars));
