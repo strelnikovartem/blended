@@ -12,12 +12,10 @@ const allCars = [
 ];
 
 const makeCarsWithDiscount = (cars, discount) => {
-  return cars.map(item => {
-    return {
-      ...item,
-      price: item.price * (1 - discount),
-    };
-  });
+  return cars.map(item => ({
+    ...item,
+    price: item.price * (1 - discount),
+  }));
 };
 
 console.table(makeCarsWithDiscount(allCars, 0.2));
