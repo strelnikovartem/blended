@@ -12,7 +12,11 @@ const allCars = [
 ];
 
 const getModels = cars => {
-  console.log(cars);
+  const res = [];
+
+  cars.forEach(item => {
+    console.log(item);
+  });
 };
 
-getModels(allCars);
+console.log(getModels(allCars));
