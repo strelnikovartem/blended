@@ -7,3 +7,12 @@ const players = [
 ];
 
 const playerIdToUpdate = 'player-3';
+
+const newArray = player => {
+  if (player.name === playerIdToUpdate) {
+    return {
+      ...player,
+      player.timePlayed += 100,
+    }
+  }
+}
