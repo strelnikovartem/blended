@@ -12,7 +12,10 @@ const allCars = [
 ];
 
 const getModels = cars => {
-  const res = cars.map();
+  const res = cars.map(item => {
+    return item.model;
+  });
+  return res;
 };
 
 console.log(getModels(allCars));
