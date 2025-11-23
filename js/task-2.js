@@ -15,8 +15,10 @@ const getModels = cars => {
   const res = [];
 
   cars.forEach(item => {
-    console.log(item);
+    res.push(item.model);
   });
+
+  return res;
 };
 
 console.log(getModels(allCars));
