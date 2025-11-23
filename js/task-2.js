@@ -11,10 +11,10 @@ const allCars = [
   { make: 'Ford', model: 'Explorer', amount: 6, price: 31660 },
 ];
 
-const makeCarsWithDiscount = cars => {
+const makeCarsWithDiscount = (cars, discount) => {
   cars.map(item => {
-    console.log(item);
+    return item;
   });
 };
 
-console.log(makeCarsWithDiscount(allCars));
+console.log(makeCarsWithDiscount(allCars, 0.2));
