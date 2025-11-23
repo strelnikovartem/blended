@@ -11,9 +11,8 @@ const allCars = [
   { make: 'Ford', model: 'Explorer', amount: 6, price: 31660 },
 ];
 
-const getModels = cars => {
-  const res = cars.map(item => item.model);
-  return res;
+const makeCarsWithDiscount = cars => {
+  console.log(cars);
 };
 
-console.log(getModels(allCars));
+console.log(makeCarsWithDiscount(allCars));
