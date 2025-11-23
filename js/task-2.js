@@ -10,3 +10,9 @@ const allCars = [
   { make: 'Ford', model: 'Fusion', amount: 13, price: 22120 },
   { make: 'Ford', model: 'Explorer', amount: 6, price: 31660 },
 ];
+
+const getModels = cars => {
+  console.log(cars);
+};
+
+getModels(allCars);
