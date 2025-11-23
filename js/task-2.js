@@ -12,8 +12,10 @@ const allCars = [
 ];
 
 const makeCarsWithDiscount = (cars, discount) => {
-  cars.map(item => {
-    return item;
+  return cars.map(item => {
+    return {
+      price: item.price * (1 - discount),
+    };
   });
 };
 
