@@ -81,7 +81,6 @@ const allCars = [
   },
 ];
 
-const filterByPrice = (cars, threshold) => {
-  return cars.filter(car => car.price < threshold);
-};
-console.log(filterByPrice(allCars, 23000));
+const getCarsWithType = (cars, type) => cars.filter(car => car.type === type);
+
+console.log(getCarsWithType(allCars, 'sedan'));
