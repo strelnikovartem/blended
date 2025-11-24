@@ -81,4 +81,5 @@ const allCars = [
   },
 ];
 
-console.log(filterByPrice(allCars, 30000));
+const filterByPrice = (cars, threshold) =>
+  console.log(filterByPrice(allCars, 30000));
