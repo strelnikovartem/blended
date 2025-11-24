@@ -80,3 +80,5 @@ const allCars = [
     onSale: false,
   },
 ];
+
+console.log(filterByPrice(allCars, 30000));
