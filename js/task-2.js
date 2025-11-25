@@ -82,13 +82,3 @@
 // ];
 
 // const numbers = [1, 10, 20, 30, 40];
-
-const solaries = {
-  foon: 100,
-  loon: 200,
-  poon: 300,
-};
-
-const value = Object.values(solaries).reduce((acc, item) => acc + item);
-
-console.log(value);
