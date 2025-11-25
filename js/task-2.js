@@ -90,3 +90,10 @@ const players = [
   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 ];
+
+const allTimePlayed = players.reduce(
+  (acc, player) => acc + player.timePlayed,
+  0
+);
+
+console.log(allTimePlayed);
