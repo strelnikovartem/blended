@@ -81,6 +81,6 @@ const allCars = [
   },
 ];
 
-const getByModel = (arr, model) => arr.find(car => car.model === model);
+const getByModel = allCars.find(car => car.price === 31660);
 
-console.log(getByModel(allCars, 'CX-9'));
+console.log(getByModel);
