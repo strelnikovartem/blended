@@ -81,8 +81,4 @@
 //   },
 // ];
 
-const numbers = [1, 10, 20, 30, 40];
-
-const total = numbers.reduce((acc, num) => (acc += num));
-
-console.log(total);
+// const numbers = [1, 10, 20, 30, 40];
