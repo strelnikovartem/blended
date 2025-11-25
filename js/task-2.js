@@ -83,6 +83,6 @@
 
 const arr = [5, 10, 15, 20, 25];
 
-const number = arr.find(a => a === 5);
+const number = arr.find(a => a === 25);
 
 console.log(number);
