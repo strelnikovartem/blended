@@ -89,6 +89,6 @@ const solaries = {
   poon: 300,
 };
 
-const value = Object.values(solaries);
+const value = Object.values(solaries).reduce((acc, item) => acc + item);
 
 console.log(value);
