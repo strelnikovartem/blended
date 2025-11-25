@@ -81,6 +81,6 @@ const allCars = [
   },
 ];
 
-const getByModel = allCars.find(car => car.price === 31660);
+const goodPrice = allCars.every(car => 25000 < car.price < 30000);
 
-console.log(getByModel);
+console.log(goodPrice);
