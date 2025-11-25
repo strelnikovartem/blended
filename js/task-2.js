@@ -81,6 +81,6 @@ const allCars = [
   },
 ];
 
-const goodPrice = allCars.every(car => car.price < 32000);
+const goodPrice = allCars.every(car => car.price < 320000);
 
 console.log(goodPrice);
