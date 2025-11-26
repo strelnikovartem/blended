@@ -280,5 +280,10 @@ const newArray = [10, 20, 30, 5, 40, 7, 50];
 
 function sortedNumbers(arr) {
   for (const number of arr) {
+    console.log(number);
+    if (number % 2 === 0) {
+    }
   }
 }
+
+sortedNumbers(newArray);
