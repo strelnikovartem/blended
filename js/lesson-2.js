@@ -67,7 +67,7 @@
 
 function caclculateAverage(...args) {
   for (const num of args) {
-    console.log(num);
+   if(isNumber)
   }
 }
 
@@ -127,9 +127,9 @@ console.log(caclculateAverage(1, 2, 3, 4, 5));
 
 // Скористайтесь цим прикладом виклику функції для перевірки її роботи:
 
-function findLongestWord(string) {}
+// function findLongestWord(string) {}
 
-console.log(findLongestWord('London is the capital of Great Britain')); // 'capital'
+// console.log(findLongestWord('London is the capital of Great Britain')); // 'capital'
 
 //!task-7
 
