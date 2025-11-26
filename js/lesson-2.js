@@ -278,15 +278,4 @@
 
 const newArray = [10, 20, 30, 5, 40, 7, 50];
 
-function sortedNumbers(arr) {
-  for (const number of arr) {
-    if (number % 2 === 0) {
-      console.log('2%', number);
-      continue;
-    } else {
-      console.log('1%', number);
-    }
-  }
-}
-
 sortedNumbers(newArray);
