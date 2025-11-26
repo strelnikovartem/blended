@@ -49,17 +49,18 @@
 // аргументів і повертає їхнє середнє значення.
 // Додайте перевірку, що аргументи - це числа.
 
-// function caclculateAverage(...args) {
-//     const total = 0;
-//     const count = 0;
-//   for (const num of args) {
-//       if (typeof num === 'number') {
-//           console.log('ok');
-//   }
-//     return total
-// }
+function caclculateAverage(...args) {
+  const total = 0;
+  const count = 0;
+  for (const num of args) {
+    if (typeof num === 'number') {
+      total += num;
+    }
+    return total;
+  }
+}
 
-// console.log(caclculateAverage(1, 2, 3, 4, 5));
+console.log(caclculateAverage(1, 2, 3, 'bob', 4, 5));
 
 //!task-4
 
