@@ -275,3 +275,10 @@
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
+
+const newArray = [10, 20, 30, 5, 40, 7, 50];
+
+function sortedNumbers(arr) {
+  for (const number of arr) {
+  }
+}
