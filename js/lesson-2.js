@@ -282,7 +282,7 @@ function sortedNumbers(arr) {
   for (const number of arr) {
     if (number % 2 === 0) {
       console.log('2%', number);
-      //   continue;
+      continue;
     }
     console.log('1%', number);
   }
