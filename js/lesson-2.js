@@ -33,30 +33,14 @@
 
 // function checkLogin(array) {
 //   const userName = prompt("Введіть ваше ім'я:");
-
-//   if (userName === null || userName.trim() === '') {
-//     alert('Скасовано');
-//     return;
-//   }
-
-//   // Робимо порівняння нечутливим до регістру:
-//   const normalizedName = userName.toLowerCase();
-//   const normalizedArray = array.map(name => name.toLowerCase());
-
-//   if (normalizedArray.includes(normalizedName)) {
-//     // Знаходимо оригінальне ім’я, щоб вивести з великої букви
-//     const originalName = array.find(
-//       name => name.toLowerCase() === normalizedName
-//     );
-//     alert(`Welcome, ${originalName}!`);
-//   } else {
-//     alert('User not found');
-//   }
+//   return array.includes(userName)
+//     ? alert(`Welcome ${userName}`)
+//     : alert(`User not found`);
 // }
 
 // const logins = ['Peter', 'John', 'Igor', 'Sasha'];
 
-// checkLogin(logins);
+// console.log(checkLogin(logins));
 
 //!task-3 ????????????
 
@@ -65,17 +49,17 @@
 // аргументів і повертає їхнє середнє значення.
 // Додайте перевірку, що аргументи - це числа.
 
-function caclculateAverage(...args) {
-    const total = 0;
-    const count = 0;
-  for (const num of args) {
-      if (typeof num === 'number') {
-          console.log('ok');
-  }
-    // return total
-}
+// function caclculateAverage(...args) {
+//     const total = 0;
+//     const count = 0;
+//   for (const num of args) {
+//       if (typeof num === 'number') {
+//           console.log('ok');
+//   }
+//     return total
+// }
 
-console.log(caclculateAverage(1, 2, 3, 4, 5));
+// console.log(caclculateAverage(1, 2, 3, 4, 5));
 
 //!task-4
 
@@ -290,3 +274,18 @@ console.log(caclculateAverage(1, 2, 3, 4, 5));
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
+
+// const allUser = {
+//   Marly: 100,
+//   Bob: 200,
+// };
+
+// function total(obj) {
+//   let sum = 0;
+//   for (const key of Object.values(obj)) {
+//     sum += key;
+//   }
+//   return sum;
+// }
+
+// console.log(total(allUser));
