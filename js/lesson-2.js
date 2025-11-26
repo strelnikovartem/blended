@@ -66,7 +66,9 @@
 // Додайте перевірку, що аргументи - це числа.
 
 function caclculateAverage(...args) {
-  console.log(args);
+  for (const num of args) {
+    console.log(num);
+  }
 }
 
 console.log(caclculateAverage(1, 2, 3, 4, 5));
@@ -284,17 +286,3 @@ console.log(findLongestWord('London is the capital of Great Britain')); // 'capi
 // console.log(arrowAdd(1, 2, 3, 5));
 
 //!Obj
-
-const newArray = [10, 20, 30, 5, 40, 7, 50];
-
-function sortedNumbers(arr) {
-  for (const number of arr) {
-    if (number % 2 === 0) {
-      console.log('2%', number);
-      continue;
-    }
-    console.log('1%', number);
-  }
-}
-
-sortedNumbers(newArray);
