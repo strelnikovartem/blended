@@ -66,7 +66,8 @@
 // Додайте перевірку, що аргументи - це числа.
 
 function caclculateAverage(...args) {
-    const total = []
+    const total = 0;
+    const count = 0;
   for (const num of args) {
       if (typeof num === 'number') {
           console.log('ok');
