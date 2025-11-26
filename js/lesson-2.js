@@ -68,7 +68,7 @@
 function caclculateAverage(...args) {
     const total = []
   for (const num of args) {
-      if (typeof num === Number) {
+      if (typeof num === 'number') {
           console.log('ok');
   }
     // return total
