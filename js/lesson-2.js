@@ -50,17 +50,19 @@
 // Додайте перевірку, що аргументи - це числа.
 
 function caclculateAverage(...args) {
-  const total = 0;
-  const count = 0;
+  let total = 0;
+  let count = 0;
   for (const num of args) {
-    if (typeof num === 'number') {
-      total += num;
+    if (typeof num !== 'number') {
+      continue;
     }
-    return total;
+    total += num;
+    count += 1;
   }
+  return total / count;
 }
 
-console.log(caclculateAverage(1, 2, 3, 'bob', 4, 5));
+console.log(caclculateAverage(1, 2, 3, 'bob', 4, 5, true, 6));
 
 //!task-4
 
