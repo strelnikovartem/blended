@@ -96,7 +96,7 @@
 // в іншому випадку - поверніть 'Sory, it is not an array!'.
 
 function findSmallestNumber(array) {
-  if (array.isArray) {
+  if (Array.isArray(array)) {
     console.log(array);
     for (const num of array) {
       console.log(num);
