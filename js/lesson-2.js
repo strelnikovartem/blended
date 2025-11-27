@@ -97,7 +97,7 @@
 
 function findSmallestNumber(array) {
   if (array.isArray) {
-    log;
+    console.log(array);
     for (const num of array) {
       console.log(num);
     }
