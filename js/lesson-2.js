@@ -96,10 +96,10 @@
 // в іншому випадку - поверніть 'Sory, it is not an array!'.
 
 function findSmallestNumber(array) {
-    if (Array.isArray(array)) {
-        let smallNum = 0; 
-    for (const num of array) {
-      if(num )
+  if (Array.isArray(array)) {
+    let smallNum;
+    for (let i = 0; i < array.length; i++) {
+      const element = array[i];
     }
   }
 }
