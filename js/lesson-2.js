@@ -106,6 +106,7 @@ function findSmallestNumber(array) {
       smallNum = array[i];
     }
   }
+  return smallNum;
 }
 
 const numbers = [12, 5, 35, 56, 1, 24, 7, 80, 3];
