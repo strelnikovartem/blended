@@ -124,9 +124,8 @@
 
 function findLongestWord(string) {
   const arr = string.split(' ');
-  for (let i = 0; i < arr.length; i++) {
-    console.log(i);
-  }
+  let big = arr[0];
+  for (let i = 0; i < arr.length; i++) {}
 }
 
 console.log(findLongestWord('London is the capital of Great Britain')); // 'capital'
