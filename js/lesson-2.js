@@ -99,7 +99,7 @@ function findSmallestNumber(array) {
   if (Array.isArray(array)) {
     let smallNum;
     for (let i = 0; i < array.length; i++) {
-      const element = array[i];
+      console.log(i);
     }
   }
 }
