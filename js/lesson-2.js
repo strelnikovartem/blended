@@ -97,11 +97,13 @@
 
 function findSmallestNumber(array) {
   if (Array.isArray(array)) {
-    let smallNum;
-    for (let i = 0; i < array.length; i++) {
-      console.log(i);
-    }
+    return;
   }
+  let smallNum = 0;
+  for (let i = 0; i < array.length; i++) {
+    smallNum += array[i];
+  }
+  return smallNum;
 }
 
 const numbers = [12, 5, 35, 56, 1, 24, 7, 80, 3];
