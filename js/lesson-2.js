@@ -152,6 +152,8 @@ const user = {
 };
 
 user.mood = 'happy';
+user.hobby = 'skydiving';
+user.premium = false;
 
 console.log(user);
 
