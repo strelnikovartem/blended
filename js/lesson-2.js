@@ -99,14 +99,20 @@ function findSmallestNumber(array) {
   if (!Array.isArray(array)) {
     return `Sory, it is not an array!`;
   }
-  let smallNum = array[i];
-  console.log(smallNum);
-  for (let i = 0; i < array.length; i++) {}
+  let smallNum = array[0];
+
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < smallNum) {
+      smallNum = array[i];
+    }
+  }
 }
 
 const numbers = [12, 5, 35, 56, 1, 24, 7, 80, 3];
+const numbers1 = 1;
 
 console.log(findSmallestNumber(numbers));
+console.log(findSmallestNumber(numbers1));
 //!task-6
 
 // Напишіть функцію findLongestWord(string), яка
