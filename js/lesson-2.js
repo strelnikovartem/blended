@@ -144,22 +144,22 @@
 // 4 - виведе зміст об'єкта user у форматі
 // '<ключ>:<значення>' використовуя Object.keys() та for...of
 
-const user = {
-  name: 'John',
-  age: 20,
-  hobby: 'tenis',
-  premium: true,
-};
+// const user = {
+//   name: 'John',
+//   age: 20,
+//   hobby: 'tenis',
+//   premium: true,
+// };
 
-user.mood = 'happy';
-user.hobby = 'skydiving';
-user.premium = false;
+// user.mood = 'happy';
+// user.hobby = 'skydiving';
+// user.premium = false;
 
-for (const key of Object.keys(user)) {
-  console.log(`${key}: ${user[key]}`);
-}
+// for (const key of Object.keys(user)) {
+//   console.log(`${key}: ${user[key]}`);
+// }
 
-console.log(user);
+// console.log(user);
 
 //!task-8
 
@@ -168,18 +168,18 @@ console.log(user);
 // збережіть його результат в змінній sum.
 // Якщо об'єкт salaries пустий, то результат має бути 0
 
-// const salaries = {
-//     Mango: 100,
-//     Poly: 160,
-//     Ajax: 1470,
-//   };
+const salaries = {
+  Mango: 100,
+  Poly: 160,
+  Ajax: 1470,
+};
 
-// const user = {
-//     name: "John",
-//     age: 20,
-//     hobby: "tenis",
-//     premium: true,
-//   };
+let sum = 0;
+
+for (const value of Object.values(salaries)) {
+  sum += value;
+}
+console.log(sum);
 
 //!task-9
 
