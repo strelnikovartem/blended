@@ -168,18 +168,18 @@
 // збережіть його результат в змінній sum.
 // Якщо об'єкт salaries пустий, то результат має бути 0
 
-const salaries = {
-  Mango: 100,
-  Poly: 160,
-  Ajax: 1470,
-};
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
 
-let sum = 0;
+// let sum = 0;
 
-for (const value of Object.values(salaries)) {
-  sum += value;
-}
-console.log(sum);
+// for (const value of Object.values(salaries)) {
+//   sum += value;
+// }
+// console.log(sum);
 
 //!task-9
 
@@ -191,6 +191,22 @@ console.log(sum);
 
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties'
+
+const calculator = {
+  a: null,
+  b: null,
+  read(a, b) {
+    this.a = a;
+    this.b = b;
+  },
+  sum() {},
+  mult() {},
+  exist() {},
+};
+
+calculator.read(2, 3);
+
+console.log(calculator);
 
 //!task-10
 
