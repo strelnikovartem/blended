@@ -123,8 +123,10 @@
 // Скористайтесь цим прикладом виклику функції для перевірки її роботи:
 
 function findLongestWord(string) {
-  const arr = string.join(' ');
-  console.log(arr);
+  const arr = string.split(' ');
+  for (let i = 0; i < arr.length; i++) {
+    console.log(i);
+  }
 }
 
 console.log(findLongestWord('London is the capital of Great Britain')); // 'capital'
