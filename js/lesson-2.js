@@ -122,18 +122,18 @@
 
 // Скористайтесь цим прикладом виклику функції для перевірки її роботи:
 
-function findLongestWord(string) {
-  const arr = string.split(' ');
-  let big = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i].length > big.length) {
-      big = arr[i];
-    }
-  }
-  return big;
-}
+// function findLongestWord(string) {
+//   const arr = string.split(' ');
+//   let big = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i].length > big.length) {
+//       big = arr[i];
+//     }
+//   }
+//   return big;
+// }
 
-console.log(findLongestWord('London is the capital of Great Britain')); // 'capital'
+// console.log(findLongestWord('London is the capital of Great Britain')); // 'capital'
 
 //!task-7
 
@@ -143,6 +143,17 @@ console.log(findLongestWord('London is the capital of Great Britain')); // 'capi
 // 3 - замінить значення premium на false,
 // 4 - виведе зміст об'єкта user у форматі
 // '<ключ>:<значення>' використовуя Object.keys() та for...of
+
+const user = {
+  name: 'John',
+  age: 20,
+  hobby: 'tenis',
+  premium: true,
+};
+
+user.mood = 'happy';
+
+console.log(user);
 
 //!task-8
 
