@@ -102,8 +102,6 @@
 //   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 // ];
 
-const foo = () => {
-  console.log(this);
-};
-
-foo();
+const user {
+  
+}
