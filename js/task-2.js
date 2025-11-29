@@ -102,6 +102,11 @@
 //   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 // ];
 
-const user {
-  
-}
+const user = {
+  nserName: 'Gio',
+  showThis() {
+    console.log('this', this);
+  },
+};
+
+user.showThis();
