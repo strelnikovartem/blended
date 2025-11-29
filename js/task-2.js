@@ -102,14 +102,13 @@
 //   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 // ];
 
-function sum() {
-  console.log('this', this);
-}
-
 const user = {
   name: 'Alice',
+  showThis() {
+    console.log(this);
+  },
 };
 
-user.sum = sum;
+const foo = user.showThis;
 
-console.log(user);
+console.log(foo);
