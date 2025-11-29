@@ -106,4 +106,8 @@ function sum() {
   console.log('this', this);
 }
 
-sum();
+const user = {
+  name: 'Alice',
+};
+
+user.sum = sum;
