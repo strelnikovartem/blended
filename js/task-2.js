@@ -102,15 +102,8 @@
 //   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 // ];
 
-const user1 = {
-  nserName: 'Gio',
-  showThis() {
-    console.log('this', this);
-  },
-};
-const user2 = {
-  nserName: 'Woolf',
-  showThis: user1.showThis,
-};
+function sum() {
+  console.log('this', this);
+}
 
-user2.showThis();
+sum();
