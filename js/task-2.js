@@ -111,3 +111,5 @@ const user = {
 };
 
 user.sum = sum;
+
+console.log(user);
