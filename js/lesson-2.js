@@ -192,21 +192,26 @@
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties'
 
-const calculator = {
-  a: null,
-  b: null,
-  read(a, b) {
-    this.a = a;
-    this.b = b;
-  },
-  sum() {},
-  mult() {},
-  exist() {},
-};
+// const calculator = {
+//   read(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   },
+//   sum() {
+//     return this.exist() ? this.a + this.b : `No such propeties`;
+//   },
+//   mult() {
+//     return this.exist() ? this.a * this.b : `No such propeties`;
+//   },
+//   exist() {
+//     return this.a !== undefined && this.b !== undefined;
+//   },
+// };
 
-calculator.read(2, 3);
+// calculator.read(2, 3);
 
-console.log(calculator);
+// console.log(calculator.sum());
+// console.log(calculator.mult());
 
 //!task-10
 
@@ -218,16 +223,28 @@ console.log(calculator);
 // Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою
 // назвою фрукта, це також треба урахувати.
 
-// const fruits = [
-//     { name: "Яблуко", price: 45, quantity: 7 },
-//     { name: "Апельсин", price: 60, quantity: 4 },
-//     { name: "Банан", price: 125, quantity: 8 },
-//     { name: "Груша", price: 350, quantity: 2 },
-//     { name: "Виноград", price: 440, quantity: 3 },
-//     { name: "Банан", price: 125, quantity: 3 },
-//   ];
+const fruits = [
+  { name: 'Яблуко', price: 45, quantity: 7 },
+  { name: 'Апельсин', price: 60, quantity: 4 },
+  { name: 'Банан', price: 125, quantity: 8 },
+  { name: 'Груша', price: 350, quantity: 2 },
+  { name: 'Виноград', price: 440, quantity: 3 },
+  { name: 'Банан', price: 125, quantity: 3 },
+];
 
-//task - 11
+function calcTotalPrice(f, d) {
+  let sum = 0;
+  for (let i = 0; i < f.length; i++) {
+    if (f[i].name === d) {
+      return f[i].price * f[i].quantity;
+    }
+  }
+  return sum;
+}
+
+console.log(calcTotalPrice(fruits, 'Апельсин'));
+
+//!task - 11
 
 // const Transaction = {
 //   DEPOSIT: 'deposit',
