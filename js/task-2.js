@@ -113,4 +113,4 @@ const foo = user.showThis;
 
 console.log(foo);
 
-foo();
+user.foo();
