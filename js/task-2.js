@@ -109,8 +109,8 @@ const user = {
   },
 };
 
-const foo = user.showThis;
+function foo(callback) {
+  console.log(callback);
+}
 
-console.log(foo);
-
-foo();
+foo(user.showThis);
