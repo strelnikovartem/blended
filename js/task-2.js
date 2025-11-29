@@ -112,3 +112,5 @@ const user = {
 const foo = user.showThis;
 
 console.log(foo);
+
+foo();
