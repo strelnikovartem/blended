@@ -103,6 +103,6 @@
 // ];
 
 function foo() {
-  console.log('good');
+  console.log(this);
 }
 foo();
