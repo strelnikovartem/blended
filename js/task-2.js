@@ -114,6 +114,6 @@ const user = {
 
 // user.showThis();
 
-const foo = user.showName;
+const foo = user.showThis;
 
 foo();
