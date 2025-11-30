@@ -124,21 +124,9 @@
 
 // console.log(shop.calcTotalPrice('Груша'));
 
-function changeColor(color) {
-  console.log(this);
-  this.color = color;
-}
-
-const hat = {
-  color: 'red',
+const counter = {
+  value: 0,
+  increment(value) {
+    console.log();
+  },
 };
-
-const sweater = {
-  color: 'black',
-};
-
-changeColor.call(hat, 'blue');
-
-changeColor.apply(sweater, ['white']);
-
-console.log(sweater);
