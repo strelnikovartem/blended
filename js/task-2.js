@@ -109,8 +109,12 @@ const user = {
   },
 
   showName() {
-    console.log(this.showName);
+    console.log(this.name);
   },
 };
 
-user.showThis();
+// user.showThis();
+
+const foo = user.showName;
+
+foo();
