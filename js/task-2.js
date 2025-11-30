@@ -103,11 +103,10 @@
 // ];
 
 const user = {
-  name: 'Alice',
+  nameName: 'Alice',
   showThis() {
     console.log(this);
   },
-
   showName() {
     console.log(this.name);
   },
