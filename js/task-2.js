@@ -123,3 +123,9 @@
 // };
 
 // console.log(shop.calcTotalPrice('Груша'));
+
+function showThis() {
+  console.log(this);
+}
+
+showThis();
