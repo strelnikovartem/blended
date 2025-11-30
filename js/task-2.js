@@ -110,4 +110,13 @@ const shop = {
     { name: 'Виноград', price: 440, quantity: 3 },
     { name: 'Банан', price: 125, quantity: 3 },
   ],
+
+  calcTotalPrice(fruit) {
+    const fruitFind = this.fruits.find(
+      f => f.name.toLowerCase() === fruit.toLowerCase()
+    );
+    console.log(fruitFind);
+  },
 };
+
+shop.calcTotalPrice('Груша');
