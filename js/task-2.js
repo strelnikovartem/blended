@@ -101,3 +101,13 @@
 //   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
 //   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 // ];
+const shop = {
+  fruits: [
+    { name: 'Яблуко', price: 45, quantity: 7 },
+    { name: 'Апельсин', price: 60, quantity: 4 },
+    { name: 'Банан', price: 125, quantity: 8 },
+    { name: 'Груша', price: 350, quantity: 2 },
+    { name: 'Виноград', price: 440, quantity: 3 },
+    { name: 'Банан', price: 125, quantity: 3 },
+  ],
+};
