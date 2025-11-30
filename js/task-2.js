@@ -112,8 +112,8 @@ const user = {
   },
 };
 
-// user.showThis();
-
 const foo = user.showThis;
 
-foo();
+const lalala = user.showName;
+
+lalala();
