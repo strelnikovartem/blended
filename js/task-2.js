@@ -109,6 +109,8 @@ const user = {
   },
 
   showName() {
-    console.log(this.name);
+    console.log(this.showName);
   },
 };
+
+user.showThis();
