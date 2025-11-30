@@ -133,5 +133,3 @@ const objA = {
   a: 5,
   b: 10,
 };
-
-console.log(showThis.call(objA, 'Alice', 'Bob'));
