@@ -139,4 +139,6 @@ const sweater = {
 
 changeColor.call(hat, 'blue');
 
-console.log(hat);
+changeColor.apply(sweater, ['white']);
+
+console.log(sweater);
