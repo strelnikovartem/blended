@@ -108,18 +108,17 @@ const shop = {
     { name: 'Банан', price: 125, quantity: 8 },
     { name: 'Груша', price: 350, quantity: 2 },
     { name: 'Виноград', price: 440, quantity: 3 },
-    { name: 'Банан', price: 125, quantity: 3 },
   ],
 
   calcTotalPrice(fruit) {
     const fruitFind = this.fruits.find(
-      f => f.name.toLowerCase() === fruit.toLowerCase()
+      item => item.name.toLowerCase() === fruit.toLowerCase()
     );
     if (!fruitFind) {
-      return `${fruit} Not find`;
+      return `${fruit} Not found`;
     }
     return fruitFind.price * fruitFind.quantity;
   },
 };
 
-console.log(shop.calcTotalPrice('Банан'));
+console.log(shop.calcTotalPrice('Груша'));
