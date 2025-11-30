@@ -124,19 +124,12 @@
 
 // console.log(shop.calcTotalPrice('Груша'));
 
-function showThis() {
-  console.log(this);
-  return this.a * this.b;
-}
+function changeColor(color) {}
 
-const objA = {
-  a: 5,
-  b: 10,
+const hat = {
+  color: 'red',
 };
 
-const objB = {
-  a: 50,
-  b: 100,
+const sweater = {
+  color: 'black',
 };
-
-console.log(showThis.apply(objB));
