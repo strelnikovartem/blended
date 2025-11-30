@@ -101,19 +101,3 @@
 //   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
 //   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 // ];
-
-const user = {
-  nameName: 'Alice',
-  showThis() {
-    console.log(this);
-  },
-  showName() {
-    console.log(this.name);
-  },
-};
-
-const foo = user.showThis;
-
-const lalala = user.showName;
-
-lalala();
