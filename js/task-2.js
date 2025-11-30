@@ -107,10 +107,8 @@ const user = {
   showThis() {
     console.log(this);
   },
+
+  showName() {
+    console.log(this.name);
+  },
 };
-
-function foo(callback) {
-  console.log(callback);
-}
-
-foo(user.showThis);
