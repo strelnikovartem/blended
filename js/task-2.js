@@ -115,8 +115,11 @@ const shop = {
     const fruitFind = this.fruits.find(
       f => f.name.toLowerCase() === fruit.toLowerCase()
     );
-    console.log(fruitFind);
+    if (!fruitFind) {
+      return `${fruit} Not find`;
+    }
+    return fruitFind.price * fruitFind.quantity;
   },
 };
 
-shop.calcTotalPrice('Груша');
+console.log(shop.calcTotalPrice('Банан'));
