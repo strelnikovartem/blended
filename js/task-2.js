@@ -124,8 +124,14 @@
 
 // console.log(shop.calcTotalPrice('Груша'));
 
-function showThis() {
-  console.log(this);
+function showThis(al, bo) {
+  console.log(`hello ${al}`);
+  return this.a * this.b;
 }
 
-showThis();
+const objA = {
+  a: 5,
+  b: 10,
+};
+
+console.log(showThis.call(objA, 'Alice', 'Bob'));
