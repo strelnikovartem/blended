@@ -1,5 +1,19 @@
-const array = [1, 2, 3, 4, 5];
+const user = [
+  {
+    name: 'Rob',
+    age: 25,
+  },
+  {
+    name: 'Hom',
+    age: 30,
+  },
+  {
+    name: 'Gom',
+    age: 55,
+  },
+];
 
-const newArr = arr => arr.reduce((acc, el) => acc + el, 0);
+const addName = arr =>
+  arr.map(item => item.name).toSorted((a, b) => a.localeCompare(b));
 
-console.log(newArr(array));
+console.log(addName(user));
