@@ -127,6 +127,21 @@
 const counter = {
   value: 0,
   increment(value) {
-    console.log();
+    console.log('increment', this);
+    this.value += value;
+  },
+  decrement(value) {
+    console.log('decrement', this);
+    this.value -= value;
   },
 };
+
+function foo(value, callback) {
+  console.log(callback);
+  callback(value);
+}
+
+foo(10, counter.increment.bind(counter));
+foo(5, counter.decrement.bind(counter));
+
+console.log(counter);
