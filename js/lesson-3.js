@@ -47,6 +47,10 @@
 
 // const numbers = [2, 4, 6, 8, 10];
 
+// const allNumbers = arr => arr.every(num => num % 2 === 0);
+
+// console.log(allNumbers(numbers));
+
 //!task-gpt
 
 // Дано масив людей.
@@ -60,3 +64,7 @@ const people = [
   { name: 'Ann', age: 25 },
   { name: 'Nick', age: 30 },
 ];
+
+const namePeople = arr => arr.map(obj => obj.name);
+
+console.log(namePeople(people));
