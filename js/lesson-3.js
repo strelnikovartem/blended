@@ -66,6 +66,9 @@ const people = [
 ];
 
 const namePeople = arr =>
-  arr.reduce((acc, obj) => acc + obj.age > 20 && obj.age < 30, 0);
+  arr
+    .filter(obj => obj.age >= 20 && obj.age <= 30)
+    .toSorted((a, b) => a.age - b.age)
+    .map(obj => obj.name);
 
 console.log(namePeople(people));
