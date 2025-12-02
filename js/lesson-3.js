@@ -82,3 +82,14 @@
 // const notNum = arr => arr.find(num => num % 2 !== 0);
 
 // console.log(notNum(numbers));
+
+//!task-6
+
+// Відсортуйте масив чисел [4, 2, 5, 1, 3]
+// у порядку зростання. Очікуваний результат: [1, 2, 3, 4, 5].
+
+const numbersArray = [4, 2, 5, 1, 3];
+
+const sortedArray = arr => arr.toSorted((a, b) => a - b);
+
+console.log(sortedArray(numbersArray));
