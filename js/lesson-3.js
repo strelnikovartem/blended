@@ -128,8 +128,12 @@
 // вік більше 20 років.
 // Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
 
-//const user = [
-//  { name: 'John', age: 27 },
-//  { name: 'Jane', age: 31 },
-//  { name: 'Bob', age: 19 },
-// ]
+// const user = [
+//   { name: 'John', age: 27 },
+//   { name: 'Jane', age: 31 },
+//   { name: 'Bob', age: 19 },
+// ];
+
+// const newArrUsers = arr => arr.filter(obj => obj.age > 20);
+
+// console.log(newArrUsers(user));
