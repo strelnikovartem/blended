@@ -137,3 +137,10 @@
 // const newArrUsers = arr => arr.filter(obj => obj.age > 20);
 
 // console.log(newArrUsers(user));
+
+//!task-10
+
+// Дано масив чисел [1, 2, 3, 4, 5].
+// Застосуйте метод для обчислення суми елементів масиву.
+
+// const numbers = [1, 2, 3, 4, 5];
