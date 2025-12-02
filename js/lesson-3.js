@@ -65,6 +65,7 @@ const people = [
   { name: 'Nick', age: 30 },
 ];
 
-const namePeople = arr => arr.map(obj => obj.name);
+const namePeople = arr =>
+  arr.reduce((acc, obj) => acc + obj.age > 20 && obj.age < 30, 0);
 
 console.log(namePeople(people));
