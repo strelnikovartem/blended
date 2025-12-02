@@ -57,18 +57,28 @@
 // Треба повернути імена всіх людей, яким від 20 до 30 років включно,
 // відсортувати їх за віком зростанням і повернути масив імен.
 
-const people = [
-  { name: 'John', age: 27 },
-  { name: 'Jane', age: 31 },
-  { name: 'Bob', age: 19 },
-  { name: 'Ann', age: 25 },
-  { name: 'Nick', age: 30 },
-];
+// const people = [
+//   { name: 'John', age: 27 },
+//   { name: 'Jane', age: 31 },
+//   { name: 'Bob', age: 19 },
+//   { name: 'Ann', age: 25 },
+//   { name: 'Nick', age: 30 },
+// ];
 
-const namePeople = arr =>
-  arr
-    .filter(obj => obj.age >= 20 && obj.age <= 30)
-    .toSorted((a, b) => a.age - b.age)
-    .map(obj => obj.name);
+// const namePeople = arr =>
+//   arr
+//     .filter(obj => obj.age >= 20 && obj.age <= 30)
+//     .toSorted((a, b) => a.age - b.age)
+//     .map(obj => obj.name);
 
-console.log(namePeople(people));
+// console.log(namePeople(people));
+
+//!task-5
+
+// Знайдіть перше непарне число
+
+// const numbers = [2, 13, 6, 8, 9, 10, 12];
+
+// const notNum = arr => arr.find(num => num % 2 !== 0);
+
+// console.log(notNum(numbers));
