@@ -111,8 +111,25 @@
 //  Відсортуйте масив об'єктів за віком у порядку зростання.
 // Очікуваний результат: [{name: "Bob", age: 19}, {name: "John", age: 27}, {name: "Jane", age: 31}].
 
-//const users = [
+// const users = [
+//   { name: 'John', age: 27 },
+//   { name: 'Jane', age: 31 },
+//   { name: 'Bob', age: 19 },
+// ];
+
+// const sortObj = arr => arr.toSorted((a, b) => a.age - b.age);
+
+// console.log(sortObj(users));
+
+//!task-9
+
+// Дано масив об'єктів.
+// Створіть новий масив, що містить тільки об'єкти, в яких
+// вік більше 20 років.
+// Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
+
+//const user = [
 //  { name: 'John', age: 27 },
 //  { name: 'Jane', age: 31 },
 //  { name: 'Bob', age: 19 },
-// ];
+// ]
