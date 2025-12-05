@@ -188,14 +188,3 @@
 //   .getResult(); // Отримуємо результат: 24
 
 // console.log(result); // 24
-
-function greet(name) {
-  console.log(`Hello, ${name}! I am ${this.person}`);
-}
-
-const person = 'John';
-const context = {
-  person: 'Alice',
-};
-
-greet.call(context, 'Bob');
