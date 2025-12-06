@@ -189,26 +189,20 @@
 
 // console.log(result); // 24
 
-const auto = {
-  speed: 0,
-  brend: 'audi',
-  accelerate() {
-    this.speed += 10;
-    console.log(`auto ${this.brend} run ${this.speed}`);
-  },
-  stopFoo() {
-    if (this.speed <= 0) {
-      console.log(`stop auto`);
-      return;
-    }
-    this.speed -= 10;
+'use strict';
+
+const customer = {
+  firstName: 'Jacob',
+  lastName: 'Mercer',
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
   },
 };
 
-auto.accelerate();
-auto.accelerate();
-auto.stopFoo();
-auto.stopFoo();
-auto.stopFoo();
+function makeMessage(callback) {
+  // callback() — це виклик методу getFullName в глобальному контексті
+  const username = callback();
+  console.log(`Processing an application from ${username}`);
+}
 
-console.log(auto);
+makeMessage(customer.getFullName); // TypeError: Cannot read properties of undefined (reading 'firstName')
