@@ -188,3 +188,21 @@
 //   .getResult(); // Отримуємо результат: 24
 
 // console.log(result); // 24
+
+const auto = {
+  speed: 0,
+  brend: 'audi',
+  accelerate() {
+    this.speed += 10;
+    console.log(`auto ${this.brend} run ${this.speed}`);
+  },
+  stopFoo() {
+    if (this.speed <= 0) {
+      console.log(`stop auto`);
+      return;
+    }
+    this.speed -= 10;
+  },
+};
+
+console.log(auto);
