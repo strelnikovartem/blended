@@ -188,11 +188,3 @@
 //   .getResult(); // Отримуємо результат: 24
 
 // console.log(result); // 24
-
-const animal = { legs: 4 };
-const dog = Object.create(animal);
-dog.name = 'Mango';
-
-for (const key in dog) {
-  console.log(key); // "name" "legs"
-}
