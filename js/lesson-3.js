@@ -205,4 +205,10 @@ const auto = {
   },
 };
 
+auto.accelerate();
+auto.accelerate();
+auto.stopFoo();
+auto.stopFoo();
+auto.stopFoo();
+
 console.log(auto);
