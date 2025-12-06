@@ -189,8 +189,6 @@
 
 // console.log(result); // 24
 
-'use strict';
-
 const customer = {
   firstName: 'Jacob',
   lastName: 'Mercer',
@@ -205,4 +203,4 @@ function makeMessage(callback) {
   console.log(`Processing an application from ${username}`);
 }
 
-makeMessage(customer.getFullName); // TypeError: Cannot read properties of undefined (reading 'firstName')
+makeMessage(customer.getFullName.bind(customer)); // TypeError: Cannot read properties of undefined (reading 'firstName')
