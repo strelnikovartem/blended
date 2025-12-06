@@ -189,18 +189,18 @@
 
 // console.log(result); // 24
 
-const customer = {
-  firstName: 'Jacob',
-  lastName: 'Mercer',
-  getFullName() {
-    return `${this.firstName} ${this.lastName}`;
+const hotel = {
+  username: 'Resort hotel',
+  showThis() {
+    const foo = () => {
+      console.log('this in foo: ', this);
+    };
+
+    foo();
+    console.log('this in showThis: ', this);
   },
 };
 
-function makeMessage(callback) {
-  // callback() — це виклик методу getFullName в глобальному контексті
-  const username = callback();
-  console.log(`Processing an application from ${username}`);
-}
-
-makeMessage(customer.getFullName.bind(customer)); // TypeError: Cannot read properties of undefined (reading 'firstName')
+hotel.showThis();
+// this in foo: {username: 'Resort hotel', showThis: ƒ}
+// this in showThis: {username: 'Resort hotel',showThis: ƒ}
