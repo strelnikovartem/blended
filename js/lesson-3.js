@@ -196,6 +196,7 @@ const salary = {
 };
 
 function totalSalary(obj) {
-    let total = 0;
-    for(const key in obj)
+  let total = 0;
+  for (const key in obj) {
+  }
 }
