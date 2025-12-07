@@ -194,10 +194,12 @@ class Car {
     this.brend = a;
     this.model = b;
   }
+
+  getModel() {
+    return this.model;
+  }
 }
 
 const audi = new Car('audi', 'q7');
-const bmw = new Car('bmw', 'x5');
 
-console.log(audi);
-console.log(bmw);
+console.log(audi.getModel());
