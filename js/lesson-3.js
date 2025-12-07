@@ -190,16 +190,17 @@
 // console.log(result); // 24
 
 class Car {
-  constructor(a, b) {
-    this.brend = a;
-    this.model = b;
+  constructor(obj) {
+    this.brend = obj.brend;
+    this.model = obj.model;
+    this.price = obj.price;
   }
 
-  getModel() {
-    return this.model;
+  getPrice() {
+    return this.price;
   }
 }
 
-const audi = new Car('audi', 'q7');
+const audi = new Car({ brend: 'Audi', model: 'Q7', price: 70000 });
 
-console.log(audi.getModel());
+console.log(audi.getPrice());
