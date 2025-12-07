@@ -190,3 +190,7 @@
 // console.log(result); // 24
 
 class Car {}
+
+const audi = new Car();
+
+console.log(audi);
