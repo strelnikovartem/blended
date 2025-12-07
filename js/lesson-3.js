@@ -195,4 +195,7 @@ const salary = {
   Bob: 1800,
 };
 
-function totalSalary() {}
+function totalSalary(obj) {
+    let total = 0;
+    for(const key in obj)
+}
