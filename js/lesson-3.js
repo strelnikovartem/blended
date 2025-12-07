@@ -198,5 +198,10 @@ const salary = {
 function totalSalary(obj) {
   let total = 0;
   for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      console.log(key);
+    }
   }
 }
+
+console.log(totalSalary(salary));
