@@ -199,6 +199,8 @@ class Car {
   getPrice() {
     return this.price;
   }
+
+  setPrice() {}
 }
 
 const audi = new Car({ brend: 'Audi', model: 'Q7', price: 70000 });
