@@ -190,10 +190,11 @@
 // console.log(result); // 24
 
 class Car {
+  #price;
   constructor(obj) {
     this.brend = obj.brend;
     this.model = obj.model;
-    this.price = obj.price;
+    this.#price = obj.price;
   }
 
   getPrice() {
@@ -209,4 +210,4 @@ const audi = new Car({ brend: 'Audi', model: 'Q7', price: 70000 });
 
 audi.setPrice(75000);
 
-console.log(audi.getPrice());
+console.log(audi);
