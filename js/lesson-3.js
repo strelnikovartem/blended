@@ -189,8 +189,10 @@
 
 // console.log(result); // 24
 
-const salery = {
+const salary = {
   Mango: 2000,
   Jocker: 2500,
   Bob: 1800,
 };
+
+function totalSalary() {}
