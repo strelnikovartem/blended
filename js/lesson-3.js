@@ -189,18 +189,16 @@
 
 // console.log(result); // 24
 
-const salary = {
-  Mango: 2000,
-  Jocker: 2500,
-  Bob: 1800,
-};
+const animal = { legs: 4 };
+const dog = Object.create(animal);
+dog.name = 'Mango';
 
-function totalSalary(obj) {
-  let total = 0;
-  for (const key of Object.values(obj)) {
-    total += key;
-  }
-  return total;
+console.log(Object.keys(dog)); // ["name"]
+console.log(Object.values(dog)); // ["Mango"]
+
+for (const key of Object.keys(dog)) {
+  console.log(key); // "name"
 }
-
-console.log(totalSalary(salary));
+for (const key of Object.values(dog)) {
+  console.log(key); //
+}
