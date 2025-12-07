@@ -188,3 +188,9 @@
 //   .getResult(); // Отримуємо результат: 24
 
 // console.log(result); // 24
+
+const salery = {
+  Mango: 2000,
+  Jocker: 2500,
+  Bob: 1800,
+};
