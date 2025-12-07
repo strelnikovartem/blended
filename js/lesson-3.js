@@ -189,8 +189,15 @@
 
 // console.log(result); // 24
 
-class Car {}
+class Car {
+  constructor(a, b) {
+    this.brend = a;
+    this.model = b;
+  }
+}
 
-const audi = new Car();
+const audi = new Car('audi', 'q7');
+const bmw = new Car('bmw', 'x5');
 
 console.log(audi);
+console.log(bmw);
