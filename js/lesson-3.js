@@ -197,17 +197,31 @@ class Car {
     this.#price = obj.price;
   }
 
-  getPrice() {
-    return this.price;
+  //   getPrice() {
+  //     return this.#price;
+  //   }
+
+  //   setPrice(newPrice) {
+  //     if (typeof newPrice !== 'number') {
+  //       console.log('Invalid data');
+  //       return;
+  //     }
+  //     this.#price = newPrice;
+  //   }
+
+  get price() {
+    return this.#price;
   }
 
-  setPrice(newPrice) {
-    this.price = newPrice;
+  set price(newPrice) {
+    if (typeof newPrice !== 'number') {
+    }
+    this.#price = newPrice;
   }
 }
 
 const audi = new Car({ brend: 'Audi', model: 'Q7', price: 70000 });
 
-audi.setPrice(75000);
+audi.price = 90;
 
 console.log(audi);
