@@ -189,39 +189,43 @@
 
 // console.log(result); // 24
 
-class Car {
-  #price;
-  constructor(obj) {
-    this.brend = obj.brend;
-    this.model = obj.model;
-    this.#price = obj.price;
-  }
+//!lesson
 
-  //   getPrice() {
-  //     return this.#price;
-  //   }
+// class Car {
+//   #price;
+//   constructor(obj) {
+//     this.brend = obj.brend;
+//     this.model = obj.model;
+//     this.#price = obj.price;
+//   }
 
-  //   setPrice(newPrice) {
-  //     if (typeof newPrice !== 'number') {
-  //       console.log('Invalid data');
-  //       return;
-  //     }
-  //     this.#price = newPrice;
-  //   }
+//   getPrice() {
+//     return this.#price;
+//   }
 
-  get price() {
-    return this.#price;
-  }
+//   setPrice(newPrice) {
+//     if (typeof newPrice !== 'number') {
+//       console.log('Invalid data');
+//       return;
+//     }
+//     this.#price = newPrice;
+//   }
 
-  set price(newPrice) {
-    if (typeof newPrice !== 'number') {
-    }
-    this.#price = newPrice;
-  }
-}
+//   get price() {
+//     return this.#price;
+//   }
 
-const audi = new Car({ brend: 'Audi', model: 'Q7', price: 70000 });
+//   set price(newPrice) {
+//     if (typeof newPrice !== 'number') {
+//     }
+//     this.#price = newPrice;
+//   }
+// }
 
-audi.price = 90;
+// const audi = new Car({ brend: 'Audi', model: 'Q7', price: 70000 });
 
-console.log(audi);
+// audi.price = 90;
+
+// console.log(audi);
+
+//!task next
