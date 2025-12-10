@@ -240,13 +240,3 @@
 // const newArray = arr => arr.map(obj => return {obj.name});
 
 // console.log(newArray(products));
-
-function fnA(name, callback) {
-  callback(name);
-}
-
-function fnB(a) {
-  console.log(`hello ${a}`);
-}
-
-fnA('Olena', fnB);
