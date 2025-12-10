@@ -229,3 +229,10 @@
 // console.log(audi);
 
 //!task next
+
+const products = [
+  { name: 'Laptop', price: 20000, amount: 4 },
+  { name: 'Phone', price: 8000, amount: 10 },
+  { name: 'Tablet', price: 12000, amount: 3 },
+  { name: 'TV', price: 15000, amount: 2 },
+];
