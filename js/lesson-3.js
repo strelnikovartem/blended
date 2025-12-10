@@ -236,3 +236,5 @@ const products = [
   { name: 'Tablet', price: 12000, amount: 3 },
   { name: 'TV', price: 15000, amount: 2 },
 ];
+
+const newArray = arr => arr.map(obj => obj.name);
