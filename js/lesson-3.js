@@ -237,6 +237,11 @@ const products = [
   { name: 'TV', price: 15000, amount: 2 },
 ];
 
-const newArray = arr => arr.map(obj => obj.name);
+const newArray = arr => arr.map(obj => {
+    return {
+        obj.name,
+        
+    }
+});
 
 console.log(newArray(products));
