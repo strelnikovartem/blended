@@ -230,13 +230,23 @@
 
 //!task next
 
-const products = [
-  { name: 'Laptop', price: 20000, amount: 4 },
-  { name: 'Phone', price: 8000, amount: 10 },
-  { name: 'Tablet', price: 12000, amount: 3 },
-  { name: 'TV', price: 15000, amount: 2 },
-];
+// const products = [
+//   { name: 'Laptop', price: 20000, amount: 4 },
+//   { name: 'Phone', price: 8000, amount: 10 },
+//   { name: 'Tablet', price: 12000, amount: 3 },
+//   { name: 'TV', price: 15000, amount: 2 },
+// ];
 
-const newArray = arr => arr.map(obj => return {obj.name});
+// const newArray = arr => arr.map(obj => return {obj.name});
 
-console.log(newArray(products));
+// console.log(newArray(products));
+
+function fnA(name, callback) {
+  callback(name);
+}
+
+function fnB(a) {
+  console.log(`hello ${a}`);
+}
+
+fnA('Olena', fnB);
