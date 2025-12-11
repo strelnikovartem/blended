@@ -238,11 +238,11 @@ const products = [
 ];
 
 const newArray = arr =>
-  arr.map(obj => {
-    return {
-      name: obj.name,
-      total: obj.price * obj.amount,
-    };
-  });
-
-console.log(newArray(products));
+  arr
+    .map(obj => {
+      return {
+        name: obj.name,
+        total: obj.price * obj.amount,
+      };
+    })
+    .console.log(newArray(products));
