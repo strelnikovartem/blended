@@ -245,4 +245,5 @@ const newArray = arr =>
         total: obj.price * obj.amount,
       };
     })
-    .console.log(newArray(products));
+    .toSorted((a, b) => a.total - b.total);
+console.log(newArray(products));
