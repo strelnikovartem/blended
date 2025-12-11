@@ -249,3 +249,25 @@
 // console.log(newArray(products));
 
 //!task - ??
+
+const products = [
+  { name: 'Laptop', price: 20000, amount: 4 },
+  { name: 'Phone', price: 8000, amount: 10 },
+  { name: 'Tablet', price: 12000, amount: 3 },
+  { name: 'TV', price: 15000, amount: 2 },
+];
+
+Є масив товарів. Потрібно:
+
+Знайти товари, у яких amount > 3.
+
+Для кожного такого товару створити новий об’єкт:
+
+{ name, priceWithTax }
+
+
+priceWithTax = price * 1.2 (додай 20% податку)
+
+Відсортувати результат за priceWithTax від більшого до меншого.
+
+Повернути масив назв товарів у такому порядку.
