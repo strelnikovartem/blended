@@ -257,6 +257,17 @@ const products = [
   { name: 'TV', price: 15000, amount: 2 },
 ];
 
+const newArray = arr =>
+  arr
+    .filter(obj => obj.amount > 3)
+    .map(obj => ({
+      name: obj.name,
+      priceWithTax: obj.price * 1.2,
+    }))
+    .toSorted((a, b) => b.priceWithTax - a.priceWithTax);
+
+console.log(newArray(products));
+
 // Є масив товарів. Потрібно:
 
 // Знайти товари, у яких amount > 3.
