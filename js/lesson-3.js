@@ -286,4 +286,13 @@
 
 const user = {
   name: 'Ole',
+  showThis() {
+    console.log('this', this);
+  },
 };
+
+function foo = user.showThis;
+
+
+
+
