@@ -288,4 +288,8 @@ function showThis() {
   console.log('this', this);
 }
 
-showThis();
+const user = {
+  name: 'Ole',
+};
+
+console.log(user);
