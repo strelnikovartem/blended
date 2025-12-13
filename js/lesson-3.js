@@ -292,9 +292,3 @@
 // };
 
 // user.showThis;
-
-const foo = () => {
-  console.log(this);
-};
-
-foo();
