@@ -292,4 +292,6 @@ const user = {
   name: 'Ole',
 };
 
+user.showThis = showThis;
+
 console.log(user);
