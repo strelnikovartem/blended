@@ -291,8 +291,8 @@ const user = {
   },
 };
 
-function foo() {
-  console.log(this);
+function foo(w) {
+  console.log(w);
 }
 
 foo(user.showThis);
