@@ -250,23 +250,23 @@
 
 //!task - ??
 
-const products = [
-  { name: 'Laptop', price: 20000, amount: 4 },
-  { name: 'Phone', price: 8000, amount: 10 },
-  { name: 'Tablet', price: 12000, amount: 3 },
-  { name: 'TV', price: 15000, amount: 2 },
-];
+// const products = [
+//   { name: 'Laptop', price: 20000, amount: 4 },
+//   { name: 'Phone', price: 8000, amount: 10 },
+//   { name: 'Tablet', price: 12000, amount: 3 },
+//   { name: 'TV', price: 15000, amount: 2 },
+// ];
 
-const newArray = arr =>
-  arr
-    .filter(obj => obj.amount > 3)
-    .map(obj => ({
-      name: obj.name,
-      priceWithTax: obj.price * 1.2,
-    }))
-    .toSorted((a, b) => b.priceWithTax - a.priceWithTax);
+// const newArray = arr =>
+//   arr
+//     .filter(obj => obj.amount > 3)
+//     .map(obj => ({
+//       name: obj.name,
+//       priceWithTax: obj.price * 1.2,
+//     }))
+//     .toSorted((a, b) => b.priceWithTax - a.priceWithTax);
 
-console.log(newArray(products));
+// console.log(newArray(products));
 
 // Є масив товарів. Потрібно:
 
@@ -281,3 +281,5 @@ console.log(newArray(products));
 // Відсортувати результат за priceWithTax від більшого до меншого.
 
 // Повернути масив назв товарів у такому порядку.
+
+//? next
