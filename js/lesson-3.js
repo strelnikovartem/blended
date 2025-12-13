@@ -291,8 +291,9 @@ const user = {
   },
 };
 
-function foo = user.showThis;
+const user2 = {
+  name: 'Rus',
+  foo: user.showThis,
+};
 
-
-
-
+user2;
