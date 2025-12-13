@@ -284,4 +284,9 @@
 
 //? next
 
-const user = {};
+const user = {
+  name: 'Olena',
+  showThis() {
+    console.log('this', this);
+  },
+};
