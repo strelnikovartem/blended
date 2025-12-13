@@ -284,16 +284,6 @@
 
 //? next
 
-function showThis() {
-  console.log('this', this);
-}
-
 const user = {
   name: 'Ole',
 };
-
-user.show = showThis;
-
-user.show();
-
-// console.log(user);
