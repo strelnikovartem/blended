@@ -283,12 +283,3 @@
 // Повернути масив назв товарів у такому порядку.
 
 //? next
-
-// const user = {
-//   name: 'Olena',
-//   showThis() {
-//     console.log('this', this);
-//   },
-// };
-
-// user.showThis;
