@@ -284,11 +284,15 @@
 
 //? next
 
-const user = {
-  name: 'Olena',
-  showThis() {
-    console.log('this', this);
-  },
-};
+// const user = {
+//   name: 'Olena',
+//   showThis() {
+//     console.log('this', this);
+//   },
+// };
 
-user.showThis;
+// user.showThis;
+
+const foo = () => {
+  console.log(this);
+};
