@@ -283,3 +283,9 @@
 // Повернути масив назв товарів у такому порядку.
 
 //? next
+
+function showThis() {
+  console.log('this', this);
+}
+
+showThis();
