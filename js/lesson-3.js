@@ -290,3 +290,5 @@ const user = {
     console.log('this', this);
   },
 };
+
+user.showThis;
