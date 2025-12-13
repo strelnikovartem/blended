@@ -291,9 +291,8 @@ const user = {
   },
 };
 
-const user2 = {
-  name: 'Rus',
-  foo: user.showThis,
-};
+function foo() {
+  console.log(this);
+}
 
-user2;
+foo(user.showThis);
